@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IMPRESSUM</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/gtech.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <style>
+        .navmenu a {
+            font-family: 'owndig';
+            text-decoration: none;
+            color: rgb(240, 240, 240);
+            font-size: 10pt; //border:1px solid black;
+            flex-basis: 0;
+            flex-grow: 1;
+            padding: 10pt;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .navmenu a:hover {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .navmenusmallvisible a {
+            font-family: 'owndig';
+            text-decoration: none;
+            color: rgb(240, 240, 240);
+            font-size: 2.7vw;
+            flex-basis: 0;
+            flex-grow: 1;
+            padding: 0.6vw;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .navmenusmallvisible a:hover {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        #contentcont {
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+
+        #contentcont .frame {
+            display: flex;
+            -webkit-flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-grow: 0;
+            flex-basis: 80vw; //box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+            //border: 1px solid red;
+            margin-top: 4vw;
+            margin-bottom: 4vw;
+        }
+
+        .frame>div {
+            text-align: justify;
+            width: 100%;
+        }
+
+        .frame>h1 {
+            font-family: 'owndig';
+            font-size: 9pt;
+            margin-bottom: 20pt;
+            font-weight: bold;
+            color: rgb(0, 125, 0);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <table style="width:100vw;">
+        <tr>
+            <td class="mainimg" style="background-image:url(images/ktkt.jpg)">
+                <div class="navmenu">
+                    <a href="index.html">Home</a>
+                    <a href="unternehmen.html">Unternehmen</a>
+                    <a href="leistungen.html">Leistungen</a>
+                    <a href="karriere.html">Karriere</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div class="navmnu2" onmouseleave="HideMnu()">
+                    <div id="SmallMnu" class="navmenusmallhidden">
+                        <a href="index.html">Home</a>
+                        <a href="unternehmen.html">Unternehmen</a>
+                        <a href="leistungen.html">Leistungen</a>
+                        <a href="karriere.html">Karriere</a>
+                        <a href="kontakt.html">Kontakt</a>
+                    </div>
+                    <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="contentcont">
+                    <div class="frame">
+                        <h1>Impressum ...</h1>
+                        <div style="text-align:left:0;margin-bottom:13pt;">
+                            <p style="margin:0pt;padding:0;font-size:12pt"><b><i>G-Tech</i></b></p>
+                            <p style="margin:0pt;padding:0;font-size:12pt">Tusvoort 24</p>
+                            <p style="margin:0pt;padding:0;font-size:12pt">B-3980 Tessenderlo</p>
+                            <p style="margin:6pt 0pt -3pt 0pt;padding:0;font-size:11pt"><span style="font-size:12.5pt">&#9990; &nbsp</span> +49 (0) 176 3972 4237</p>
+                            <p style="margin:0pt;padding:0;font-size:12pt;vertical-align:top;"><span style="font-size:15.5pt">&#9993; &nbsp</span> <a href="mailto:info@gtech.pro">info@gtech.pro</a></p>
+                            <p style="margin:0pt;padding:0;font-size:12pt"><span style="font-size:12pt">&#64; &nbsp</span> www.gtech.pro</p>
+
+                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Geschäftsführer:</p>
+                            <p style="font-size:12pt;padding:0;margin:0;">Ilyas Dogan</p>
+
+                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</p>
+                            <p style="font-size:12pt;padding:0;margin:0;">Ilyas Dogan</p>
+
+                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz:</p>
+                            <p style="font-size:12pt;padding:0;margin:0;">DE 281069021</p>
+
+                            <p style="font-size:16pt;font-weight:bold;margin-top:45pt;margin-bottom:0;padding:0;">Haftungsausschluss (Disclaimer) </p>
+                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Haftung für Inhalte:</p>
+                            <p style="font-size:12pt;padding:0;margin:0;">Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir prüfen und aktualisieren die Informationen auf unserer Webseite ständig. Trotz aller Sorgfalt können sich die Angaben inzwischen verändert haben. Eine Haftung oder Garantie für die Aktualität, Richtigkeit und Vollständigkeit der zur Verfügung gestellten Informationen kann deshalb nicht übernommen werden. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+
+                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Haftung für Links:</p>
+                            <p style="font-size:12pt;padding:0;margin:0;">Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+
+                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Urheberrecht:</p>
+                            <p style="font-size:12pt;padding:0;margin:0;">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+
+                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Umgang mit personenbezogenen Daten:</p>
+                            <p style="font-size:12pt;padding:0;margin:0;">Personenbezogene Daten sind Informationen, mit deren Hilfe eine Person eindeutig fassbar ist, also Daten, die zurück zu einer Person verfolgt werden können. Dazu gehören der Name, die E-Mail-Adresse oder die Telefonnummer. Aber auch Daten über Beruf, Vorlieben, Hobbies oder Mitgliedschaften zählen zu personenbezogenen Daten. Personenbezogene Daten werden von uns nur dann erhoben, genutzt und weiter gegeben, wenn dies gesetzlich erlaubt ist oder die Nutzer in die Datenerhebung einwilligen.</p>
+
+                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Kontakt-/Anfrage-/ Bewerberformular:</p>
+                            <p style="font-size:12pt;padding:0;margin:0;">Treten Sie per E-Mail oder Kontakt-/Anfrage-/Bewerberformular mit uns in Kontakt, werden die von Ihnen gemachten Angaben zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen intern gespeichert.</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="background: rgb(70,70,70);">
+                <div class="footercont">
+                    <img src="images/logo72.svg" class="logo">
+                    <div class="lownavmenu">
+                        <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
+                    </div>
+                    <div class="footer">
+                        <a href="datenschutz.html">Datenschutz &nbsp&nbsp&nbsp
+                            <font style="font-size:8pt;color:deepskyblue;font-family: 'Arial'">&lt;</font></a>
+                        <a href="impressum.html">Impressum &nbsp&nbsp&nbsp&nbsp&nbsp
+                            <font style="font-size:8pt;color:deepskyblue;font-family: 'Arial'">&lt;</font></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cpyrightbase">
+                    <div>&copy; 2012<strong>&nbspG-Tech</strong>. Alle Rechte vorbehalten.</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function ShowMnu() {
+            document.getElementById("SmallMnu").className = "navmenusmallvisible";
+        }
+
+        function HideMnu() {
+            document.getElementById("SmallMnu").className = "navmenusmallhidden";
+
+        }
+    </script>
+</body>
+
+</html>

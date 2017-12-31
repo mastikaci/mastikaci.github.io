@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KARRIERE</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/gtech.css">
+
+    <style>
+        .navmenu a {
+            font-family: 'owndig';
+            text-decoration: none;
+            color: rgb(240, 240, 240); //color: rgb(0,0,0);
+            font-size: 10pt; //border:1px solid black;
+            flex-basis: 0;
+            flex-grow: 1;
+            padding: 10pt;
+            background: rgba(255, 255, 255, 0.11);
+
+        }
+
+        .navmenu a:hover {
+
+            background: rgba(0, 0, 0, 0);
+
+        }
+
+        .navmenusmallvisible a {
+            font-family: 'owndig';
+            text-decoration: none;
+            color: rgb(240, 240, 240);
+            font-size: 2.7vw;;
+            flex-basis: 0;
+            flex-grow: 1;
+            padding: 0.6vw;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .navmenusmallvisible a:hover {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        #contentcont {
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+
+        #contentcont .frame {
+            display: flex;
+            -webkit-flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-grow: 0;
+            flex-basis: 80vw; //box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+            //border: 1px solid red;
+            margin-top: 4vw;
+            margin-bottom: 4vw;
+        }
+
+        .frame>div {
+            text-align: justify;
+            width: 100%;
+        }
+
+        #midframepic {
+            position: relative;
+            height: 9.5vw;
+            width: 5vw;
+        }
+
+        #Jobs {
+            display: flex;
+            -webkit-flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            flex-grow: 0;
+            flex-shrink: 0;
+            text-align: left;
+            width: 100%;
+        }
+
+        .JobDescr {
+            display: none;
+            color: black;
+            font-size: 12pt;
+            padding: 0px 0px 0px 50px; //background:rgb(240,240,220);
+            background: rgba(176, 196, 222, 0.4);
+            margin-top: 0px;
+        }
+
+        .Jobtitle {
+            display: block;
+            font-size: 12pt;
+            padding: 10px;
+            margin-top: 15px;
+            background: rgb(176, 196, 222); //gainsboro;//blanchedalmond;
+            color: black;
+
+        }
+
+        .Jobtitle:hover {
+            cursor: pointer;
+        }
+
+
+
+        .frame>h1 {
+            font-family: 'owndig';
+            font-size: 9pt;
+            margin-bottom: 20pt;
+            font-weight: bold;
+            color: rgb(0, 125, 0);
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <table style="width:100vw;">
+        <tr>
+            <td class="mainimg" style="background-image:url(images/stw90p2.jpg)">
+                <div class="navmenu">
+                    <a href="index.html">Home</a>
+                    <a href="unternehmen.html">Unternehmen</a>
+                    <a href="leistungen.html">Leistungen</a>
+                    <a href="karriere.html">Karriere</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div class="navmnu2" onmouseleave="HideMnu()">
+                    <div id="SmallMnu" class="navmenusmallhidden">
+                        <a href="index.html">Home</a>
+                        <a href="unternehmen.html">Unternehmen</a>
+                        <a href="leistungen.html">Leistungen</a>
+                        <a href="karriere.html">Karriere</a>
+                        <a href="kontakt.html">Kontakt</a>
+                    </div>
+                    <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="contentcont">
+                    <div class="frame">
+                        <h1>Ihr Karriereschub</h1>
+                        <div style="font-size:12pt;">
+                            <p>Arbeiten bei G-Tech muss sich lohnen ... für alle! Wir suchen Mitarbeiter, die Mehrwert kreieren und Freude an ihrer Arbeit haben. Auf der anderen Seite bieten wir Ihnen Entwicklungsmöglichkeiten und angemessene Löhne.</p>
+                            <p>Sie sind bereit Verantwortung zu übernehmen in den Bereichen SW-Architektur, SW-Implementierung, SW-Integration, SW-Kalibrierung und SW-Verifikation und finden sich in einer unserer aktuellen Stellen- oder Projektangebote? Sie glauben an Ihre Fähigkeiten und können sich mit uns identifizieren? Dann bewerben Sie sich bitte umgehend per E-mail unter <b><a href="mailto:bewerbung@gtech.pro" style="color:green">bewerbung@gtech.pro</b></a> mit Angabe der Referenznummer.</p>
+                            <p style="margin-top:30pt;"><b>Unsere aktuellen Stellenangebote:</b></p>
+                        </div>
+                        <div id="Jobs">
+<!--
+                            <div id="JobTitle1" class="Jobtitle" onclick="ShowDescr('JobDescr1','spec1')"><span id="spec1">&nbsp &#x25B8; &nbsp</span> Ref.Nr : Stellenangebot 1 in NRW </div>
+                            <div id="JobDescr1" class="JobDescr">
+                                <p><b>Aufgaben:</b></p>
+                                <ul>
+                                    <li>Aufgabe 1</li>
+                                    <li>Aufgabe 2</li>
+                                </ul>
+                                <p style="padding-top:20px;"><b>Anforderungen:</b></p>
+                                <ul>
+                                    <li>Anforderung 1</li>
+                                    <li>Anforderung 2</li>
+                                </ul>
+                            </div>
+                            <div id="JobTitle2" class="Jobtitle" onclick="ShowDescr('JobDescr2','spec2')"><span id="spec2">&nbsp &#x25B8; &nbsp</span> Ref.Nr. 0000: Initiativbewerbung in PLZ? </div>
+                            <div id="JobDescr2" class="JobDescr">
+                                <p><b>Aufgaben:</b></p>
+                                <ul>
+                                    <li>In welche Tätigkeiten sind Sie interessiert?</li>
+                                    <li>An welchem Ort?</li>
+                                </ul>
+                                <p style="padding-top:20px;"><b>Anforderungen:</b></p>
+                                <ul>
+                                    <li>Was sind Ihre Qualifikationen?</li>
+                                </ul>
+                            </div>
+-->
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="background: rgb(70,70,70);">
+                <div class="footercont">
+                    <img src="images/logo72.svg" class="logo">
+                    <div class="lownavmenu">
+                        <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
+                    </div>
+                    <div class="footer">
+                        <a href="datenschutz.html">Datenschutz &nbsp&nbsp&nbsp
+                            <font style="font-size:8pt;color:deepskyblue;font-family: 'Arial'">&lt;</font></a>
+                        <a href="impressum.html">Impressum &nbsp&nbsp&nbsp&nbsp&nbsp
+                            <font style="font-size:8pt;color:deepskyblue;font-family: 'Arial'">&lt;</font></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cpyrightbase">
+                    <div>&copy; 2012<strong>&nbspG-Tech</strong>. Alle Rechte vorbehalten.</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function ShowDescr(iddesc, idspec) {
+            //var str = document.getElementById(idtit).innerHTML;
+            var elem1 = document.getElementById(iddesc);
+            var style = window.getComputedStyle(elem1).getPropertyValue('display');
+            if (style == "none") {
+                document.getElementById(iddesc).style.display = "block";
+                document.getElementById(idspec).innerHTML = "&nbsp &#x25BE; &nbsp ";
+
+            } else {
+                document.getElementById(iddesc).style.display = "none";
+                document.getElementById(idspec).innerHTML = "&nbsp &#x25B8; &nbsp ";
+            }
+        }
+
+        function ShowMnu() {
+            document.getElementById("SmallMnu").className = "navmenusmallvisible";
+        }
+
+        function HideMnu() {
+            document.getElementById("SmallMnu").className = "navmenusmallhidden";
+        }
+    </script>
+</body>
+
+</html>
