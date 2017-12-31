@@ -44,7 +44,7 @@
         #contentcont {
             display: flex;
             -webkit-flex-flow: row wrap;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: baseline;
         }
 
@@ -56,8 +56,8 @@
             flex-grow: 0;
             flex-basis: 80vw; //box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
             //border: 1px solid red;
-            margin-top: 4vw;
-            margin-bottom: 4vw;
+            margin-top: 30pt;
+            margin-bottom: 30pt;
         }
 
         .frame>div {
@@ -79,84 +79,90 @@
 </head>
 
 <body>
-    <table style="width:100vw;">
-        <tr>
-            <td class="mainimg" style="background-image:url(images/ktkt.jpg)">
-                <div class="navmenu">
-                    <a href="index.html">Home</a>
-                    <a href="unternehmen.html">Unternehmen</a>
-                    <a href="leistungen.html">Leistungen</a>
-                    <a href="karriere.html">Karriere</a>
-                    <a href="kontakt.html">Kontakt</a>
-                </div>
-                <div class="navmnu2" onmouseleave="HideMnu()">
-                    <div id="SmallMnu" class="navmenusmallhidden">
-                        <a href="index.html">Home</a>
-                        <a href="unternehmen.html">Unternehmen</a>
-                        <a href="leistungen.html">Leistungen</a>
-                        <a href="karriere.html">Karriere</a>
-                        <a href="kontakt.html">Kontakt</a>
-                    </div>
-                    <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div id="contentcont">
-                    <div class="frame">
-                        <h1>Datenschutz ...</h1>
-                        <div style="text-align:left:0;margin-bottom:13pt;">
+    <div class="outerdiv">
+        <div class="innerdiv">
+            <div class="element">
+                <table style="width:100vw;">
+                    <tr>
+                        <td class="mainimg" style="background-image:url(images/ktkt.jpg)">
+                            <div class="navmenu">
+                                <a href="index.html">Home</a>
+                                <a href="unternehmen.html">Unternehmen</a>
+                                <a href="leistungen.html">Leistungen</a>
+                                <a href="karriere.html">Karriere</a>
+                                <a href="kontakt.html">Kontakt</a>
+                            </div>
+                            <div class="navmnu2" onmouseleave="HideMnu()">
+                                <div id="SmallMnu" class="navmenusmallhidden">
+                                    <a href="index.html">Home</a>
+                                    <a href="unternehmen.html">Unternehmen</a>
+                                    <a href="leistungen.html">Leistungen</a>
+                                    <a href="karriere.html">Karriere</a>
+                                    <a href="kontakt.html">Kontakt</a>
+                                </div>
+                                <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="contentcont">
+                                <div class="frame">
+                                    <h1>Datenschutz ...</h1>
+                                    <div style="text-align:left:0;margin-bottom:13pt;">
 
-                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Datenschutz:</p>
-                            <p style="font-size:12pt;padding:0;margin:0;">Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
+                                        <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Datenschutz:</p>
+                                        <p style="font-size:12pt;padding:0;margin:0;">Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
 
-                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Auskunft, Löschung, Sperrung:</p>
-                            <p style="font-size:12pt;padding:0;margin:0;">Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum angegeben Adresse des Webseitenbetreibers an uns wenden.</p>
+                                        <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Auskunft, Löschung, Sperrung:</p>
+                                        <p style="font-size:12pt;padding:0;margin:0;">Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum angegeben Adresse des Webseitenbetreibers an uns wenden.</p>
 
-                            <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Datenschutzerklärung für die Nutzung von Google Analytics:</p>
-                            <p style="font-size:12pt;padding:0;margin:0;">Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google"). Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: <a href="http://tools.google.com/dlpage/gaoptout?hl=de.">http://tools.google.com/dlpage/gaoptout?hl=de.</a></p>
+                                        <p style="font-size:13pt;font-weight:bold;margin-top:25pt;margin-bottom:0;padding:0;">Datenschutzerklärung für die Nutzung von Google Analytics:</p>
+                                        <p style="font-size:12pt;padding:0;margin:0;">Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google"). Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: <a href="http://tools.google.com/dlpage/gaoptout?hl=de.">http://tools.google.com/dlpage/gaoptout?hl=de.</a></p>
 
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td style="background: rgb(70,70,70);">
-                <div class="footercont">
-                    <img src="images/logo72.svg" class="logo">
-                    <div class="lownavmenu">
-                        <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
-                    </div>
-                    <div class="footer">
-                        <a href="datenschutz.html">Datenschutz &nbsp&nbsp&nbsp
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: rgb(70,70,70);">
+                            <div class="footercont">
+                                <img src="images/logo72.svg" class="logo">
+                                <div class="lownavmenu">
+                                    <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
+                                </div>
+                                <div class="footer">
+                                    <a href="datenschutz.html">Datenschutz &nbsp&nbsp&nbsp
                             <font style="font-size:8pt;color:deepskyblue;font-family: 'Arial'">&lt;</font></a>
-                        <a href="impressum.html">Impressum &nbsp&nbsp&nbsp&nbsp&nbsp
+                                    <a href="impressum.html">Impressum &nbsp&nbsp&nbsp&nbsp&nbsp
                             <font style="font-size:8pt;color:deepskyblue;font-family: 'Arial'">&lt;</font></a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cpyrightbase">
-                    <div>&copy; 2012<strong>&nbspG-Tech</strong>. Alle Rechte vorbehalten.</div>
-                </div>
-            </td>
-        </tr>
-    </table>
-    <script>
-        function ShowMnu() {
-            document.getElementById("SmallMnu").className = "navmenusmallvisible";
-        }
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cpyrightbase">
+                                <div>&copy; 2012<strong>&nbspG-Tech</strong>. Alle Rechte vorbehalten.</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <script>
+                    function ShowMnu() {
+                        document.getElementById("SmallMnu").className = "navmenusmallvisible";
+                    }
 
-        function HideMnu() {
-            document.getElementById("SmallMnu").className = "navmenusmallhidden";
+                    function HideMnu() {
+                        document.getElementById("SmallMnu").className = "navmenusmallhidden";
 
-        }
+                    }
 
-    </script>
+                </script>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
