@@ -36,12 +36,13 @@
 
  .cpyrightbase {
      display: -webkit-box;
-     display: -moz-box;
      display: -ms-flexbox;
-     display: -webkit-flex;
      display: flex;
-     -webkit-flex-flow: row wrap;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
      justify-content: center;
+     -webkit-box-align: stretch;
+     -ms-flex-align: stretch;
      align-items: stretch;
      font-size: 8pt;
      color: rgb(150, 150, 150);
@@ -51,23 +52,25 @@
 
  .footercont {
      display: -webkit-box;
-     display: -moz-box;
      display: -ms-flexbox;
-     display: -webkit-flex;
      display: flex;
-     -webkit-flex-flow: row wrap;
+     -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
      justify-content: space-between;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
      align-items: center; //border:1px solid red;
  }
 
  .footer {
      display: -webkit-box;
-     display: -moz-box;
      display: -ms-flexbox;
-     display: -webkit-flex;
      display: flex;
-     -webkit-flex-flow: column wrap;
+     -webkit-box-pack: start;
+     -ms-flex-pack: start;
      justify-content: flex-start;
+     -webkit-box-align: start;
+     -ms-flex-align: start;
      align-items: flex-start;
      margin-right: 3vw; //border:1px solid red;
  }
@@ -121,12 +124,13 @@
      left: 0;
      bottom: 0;
      display: -webkit-box;
-     display: -moz-box;
      display: -ms-flexbox;
-     display: -webkit-flex;
      display: flex;
-     -webkit-flex-flow: row nowrap;
+     -webkit-box-pack: space-evenly;
+     -ms-flex-pack: space-evenly;
      justify-content: space-evenly;
+     -webkit-box-align: end;
+     -ms-flex-align: end;
      align-items: flex-end;
      text-align: center;
      width: 100%; //border:1px solid red;
@@ -139,12 +143,13 @@
      bottom: 0;
      left: 0;
      display: -webkit-box;
-     display: -moz-box;
      display: -ms-flexbox;
-     display: -webkit-flex;
      display: flex;
-     -webkit-flex-flow: column nowrap;
+     -webkit-box-pack: end;
+     -ms-flex-pack: end;
      justify-content: flex-end;
+     -webkit-box-align: stretch;
+     -ms-flex-align: stretch;
      align-items: stretch;
      cursor: pointer;
      width: 100%;
@@ -169,12 +174,13 @@
 
  .navmenusmallvisible {
      display: -webkit-box;
-     display: -moz-box;
      display: -ms-flexbox;
-     display: -webkit-flex;
      display: flex;
-     -webkit-flex-flow: column nowrap;
+     -webkit-box-pack: start;
+     -ms-flex-pack: start;
      justify-content: flex-start;
+     -webkit-box-align: stretch;
+     -ms-flex-align: stretch;
      align-items: stretch;
      text-align: center; //border:1px solid red;
      //display: block;
@@ -213,6 +219,7 @@
      right: 31.5%;
      font-size: 9pt;
      font-weight: bold;
+     -webkit-transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
      transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
  }
 
@@ -223,6 +230,7 @@
      right: 32.6%;
      font-size: 9pt;
      font-weight: bold;
+     -webkit-transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
      transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
  }
 
@@ -233,6 +241,7 @@
      right: 32.2%; //transform-origin:24.8% 68.3% 0;
      font-size: 9pt;
      font-weight: bold;
+     -webkit-transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
      transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
  }
 
@@ -243,6 +252,7 @@
      right: 30.1%;
      font-size: 9pt;
      font-weight: bold;
+     -webkit-transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
      transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
  }
 
@@ -253,6 +263,7 @@
      right: 26.7%;
      font-size: 9pt;
      font-weight: bold;
+     -webkit-transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
      transform: rotateX(-25deg) rotateY(40deg) rotateZ(15deg);
  }
 
@@ -263,6 +274,7 @@
      right: 21%;
      font-size: 12pt;
      font-weight: bold;
+     -webkit-transform: rotateX(-25deg) rotateY(40deg) rotateZ(20deg);
      transform: rotateX(-25deg) rotateY(40deg) rotateZ(20deg);
  }
 
@@ -273,5 +285,6 @@
      right: 28%;
      font-size: 12pt;
      font-weight: bold;
+     -webkit-transform: rotateX(-25deg) rotateY(45deg) rotateZ(35deg);
      transform: rotateX(-25deg) rotateY(45deg) rotateZ(35deg);
  }
