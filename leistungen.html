@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>LEISTUNGEN</title>
-    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <title>Leistungen</title>
+    <meta name="description" content="Entwicklung von echtzeit eingebetteter Software für Automotive Steuergeräte, vom Prototypen bis zur Serienentwicklung.">
+    <meta name="keywords" content="ASPICE modellbasierste entwicklung, Anforderungen, Architektur, Implementierung, Integration, Kalibrierung, Absicherung">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/gtech.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
 
     <style>
         .navmenu a {
@@ -30,60 +32,16 @@
             font-family: 'owndig';
             text-decoration: none;
             color: rgb(240, 240, 240);
-            font-size: 2.7vw;
+            font-size: 10pt;
             flex-basis: 0;
             flex-grow: 1;
-            padding: 0.6vw;
-            background: rgba(0, 0, 0, 0.6);
+            padding: 10pt;
+            background: rgba(0, 0, 0, 0.8);
         }
 
         .navmenusmallvisible a:hover {
             background: rgba(0, 0, 0, 0);
-        }
-
-        #lst1 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 37.5vw;
-            width: 100vw;
-            opacity: 0;
-        }
-
-        #lst2 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 37.5vw;
-            width: 100vw;
-            opacity: 0;
-        }
-
-        #lst3 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 37.5vw;
-            width: 100vw;
-            opacity: 0;
-        }
-
-        #lst4 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 37.5vw;
-            width: 100vw;
-            opacity: 0;
-        }
-
-        #lst5 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 37.5vw;
-            width: 100vw;
-            opacity: 0;
+            color: black;
         }
 
         #contentcont {
@@ -122,12 +80,11 @@
             color: rgb(0, 125, 0);
         }
 
-        /*
-        table>tr>td:nth-child(2) {
-            color: rgb(150, 150, 150);
-            font-size: 10pt;
+        @media only screen and (max-width: 400px) {
+            #contentcont .frame {
+                flex-basis: 90vw;
+            }
         }
-*/
 
     </style>
 
@@ -148,15 +105,15 @@
                                 <a href="karriere.html">Karriere</a>
                                 <a href="kontakt.html">Kontakt</a>
                             </div>
-                            <div class="navmnu2" onmouseleave="HideMnu()">
-                                <div id="SmallMnu" class="navmenusmallhidden">
+                            <div id="navmenu2" class="navmnu2" onmouseleave="HideMnu()">
+                                <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
+                                <div id="SmallMnu" class="navmenusmallvisible">
                                     <a href="index.html">Home</a>
                                     <a href="unternehmen.html">Unternehmen</a>
                                     <a href="leistungen.html">Leistungen</a>
                                     <a href="karriere.html">Karriere</a>
                                     <a href="kontakt.html">Kontakt</a>
                                 </div>
-                                <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
                             </div>
                         </td>
                     </tr>
@@ -164,26 +121,28 @@
                         <td>
                             <div id="contentcont">
                                 <div class="frame">
-                                    <h1> Die Kunst der Synergie ...</h1>
-                                    <div style="font-size:12pt;">Unsere Kernkompetenzen liegen in der Entwicklung von echtzeit eingebetteter Software für Automotive Steuergeräte, vom Prototypen bis zur Serienentwicklung. Mit modernen Entwicklungswerkzeugen können wir Support in den verschiedenen AUTOSAR-Anwendungsdomänen anbieten:
+                                    <h1> The Art of Engineering ...</h1>
+                                    <div style="font-size:12pt;">
+                                        <p>Der Anteil von Elektronik in Fahrzeugen wächst kontinuierlich und es wird immer kniffliger, die teilweise widersprüchlichen Anforderungen von Kunden und Gesetzgebung zu erfüllen. Vielleicht kann ein Querdenker Ihnen helfen, ein Ausrufezeichen mit den Anforderungen zu setzen? G-Tech bietet Impulse für Ihr Unternehmen, um Ihre Entwicklung voranzutreiben. </p>
+                                        <p>Unsere Kernkompetenzen liegen in der Entwicklung von echtzeit eingebetteter Software für Automotive Steuergeräte, vom Prototypen bis zur Serienentwicklung. Mit modernen Entwicklungswerkzeugen können wir Support in den verschiedenen AUTOSAR-Anwendungsdomänen anbieten:</p>
                                         <ul style="list-style: none;color:steelblue;">
-                                            <li>&#x25B8; &nbsp Antrieb <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;"> &nbsp &nbsp &nbsp (Verbrennungsmotoren, E-Antriebe, Hybridantriebe, ...)</span></li>
-                                            <li>&#x25B8; &nbsp Getriebe <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;"> &nbsp &nbsp &nbsp (AMT, AT, DCT, CVT, ...)</span></li>
-                                            <li>&#x25B8; &nbsp Chassis <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;"> &nbsp &nbsp &nbsp (Fahrwerk, Lenkung, Bremsen, ...)</span></li>
-                                            <li>&#x25B8; &nbsp Body &amp; Komfort <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;"> &nbsp &nbsp &nbsp (Heizung, Klima, Access, Visibility, ... )</span></li>
-                                            <li>&#x25B8; &nbsp Insassen- &amp; Fußgängersicherheit</li>
-                                            <li>&#x25B8; &nbsp HMI, Multimedia &amp; Telematik</li>
+                                            <li style="text-align:left">&#x25B8; &nbsp Antrieb <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;"> &nbsp &nbsp &nbsp (Verbrennungsmotoren, E-Antriebe, Hybridantriebe, ...)</span></li>
+                                            <li style="text-align:left">&#x25B8; &nbsp Getriebe <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;"> &nbsp &nbsp &nbsp (AMT, AT, DCT, CVT, ...)</span></li>
+                                            <li style="text-align:left">&#x25B8; &nbsp Chassis <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;"> &nbsp &nbsp &nbsp (Fahrwerk, Lenkung, Bremsen, ...)</span></li>
+                                            <li style="text-align:left">&#x25B8; &nbsp Body &amp; Komfort <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;"> &nbsp &nbsp &nbsp (Heizung, Klima, Access, Visibility, ... )</span></li>
+                                            <li style="text-align:left">&#x25B8; &nbsp Insassen- &amp; Fußgängersicherheit</li>
+                                            <li style="text-align:left">&#x25B8; &nbsp HMI, Multimedia &amp; Telematik</li>
                                         </ul>
                                         Unser Leistungsspektrum umfasst den kompletten V-Zyklus nach ASPICE (ISO/IEC 15504):
                                         <ul style="list-style: none;color:steelblue">
-                                            <li>&#x25B8; &nbsp Anforderungserfassung</li>
-                                            <li>&#x25B8; &nbsp SW-Architektur</li>
+                                            <li style="text-align:left">&#x25B8; &nbsp Anforderungserfassung</li>
+                                            <li style="text-align:left">&#x25B8; &nbsp SW-Architektur</li>
                                             <li style="text-align:left;">&#x25B8; &nbsp Modellbasierte Funktions- &amp; SW-Entwicklung </li>
-                                            <li>&#x25B8; &nbsp Identifikation, Modellierung &amp; Simulation <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;">&nbsp &nbsp &nbsp (Mil/SiL/HiL Tests)</span></li>
-                                            <li>&#x25B8; &nbsp SW-Integration </li>
-                                            <li>&#x25B8; &nbsp Applikation &amp; Absicherung am Prüfstand/Fahrzeug</li>
+                                            <li style="text-align:left">&#x25B8; &nbsp Identifikation, Modellierung &amp; Simulation <span style="display:block;text-align:left;color:rgb(150,150,150);font-size:10pt;">&nbsp &nbsp &nbsp (Mil/SiL/HiL Tests)</span></li>
+                                            <li style="text-align:left">&#x25B8; &nbsp SW-Integration </li>
+                                            <li style="text-align:left">&#x25B8; &nbsp Applikation &amp; Absicherung am Prüfstand/Fahrzeug</li>
                                         </ul>
-                                        Das Systemverständnis und Expertenwissen unserer Ingenieure in Kombination mit der Prozessübersicht ermöglicht uns, Iterationen und Reibungen zwischen den verschiedenen Arbeitsschritten zu reduzieren, um den Entwicklungsprozess zu beschleunigen. Über den gesamten Entwicklungsprozess hinweg übernehmen wir Projekte in unserem Entwicklungszentrum oder als Resident vor Ort sowohl als komplette Pakete zum Festpreis oder nach Aufwand. Von der Unterstützung bei Kapazitätsengpässen bis zur Beratung und Trouble Shooting bei komplexen technischen Herausforderungen steht der Projekterfolg immer im Vordergrund.
+                                        <p>Das Systemverständnis und Expertenwissen unserer Ingenieure in Kombination mit der Prozessübersicht ermöglicht uns, Iterationen und Reibungen zwischen den verschiedenen Arbeitsschritten zu reduzieren, um den Entwicklungsprozess zu beschleunigen. Über den gesamten Entwicklungsprozess hinweg übernehmen wir Projekte in unserem Entwicklungszentrum oder als Resident vor Ort sowohl als komplette Pakete zum Festpreis oder nach Aufwand. Von der Unterstützung bei Kapazitätsengpässen bis zur Beratung und Trouble Shooting bei komplexen technischen Herausforderungen steht der Projekterfolg immer im Vordergrund.</p>
                                     </div>
 
                                 </div>
@@ -192,7 +151,7 @@
                     </tr>
                     <tr>
                         <td style="background: rgb(70,70,70);">
-                            <div class="footercont">
+                            <div id="footercont" class="footercont">
                                 <img src="images/logo72.svg" class="logo">
                                 <div class="lownavmenu">
                                     <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
@@ -214,11 +173,13 @@
                 </table>
                 <script>
                     function ShowMnu() {
-                        document.getElementById("SmallMnu").className = "navmenusmallvisible";
+                        document.getElementById("contentcont").style.opacity = "0.1";
+                        document.getElementById("footercont").style.opacity = "0.1";
                     }
 
                     function HideMnu() {
-                        document.getElementById("SmallMnu").className = "navmenusmallhidden";
+                        document.getElementById("contentcont").style.opacity = "1";
+                        document.getElementById("footercont").style.opacity = "1";
                     }
 
                 </script>

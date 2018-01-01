@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>IMPRESSUM</title>
+    <title>Impressum</title>
     <meta name="description" content="An interactive getting started guide for Brackets.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/gtech.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <style>
         .navmenu a {
             font-family: 'owndig';
@@ -30,15 +31,16 @@
             font-family: 'owndig';
             text-decoration: none;
             color: rgb(240, 240, 240);
-            font-size: 2.7vw;
+            font-size: 10pt;
             flex-basis: 0;
             flex-grow: 1;
-            padding: 0.6vw;
-            background: rgba(0, 0, 0, 0.6);
+            padding: 10pt;
+            background: rgba(0, 0, 0, 0.8);
         }
 
         .navmenusmallvisible a:hover {
             background: rgba(0, 0, 0, 0);
+            color: black;
         }
 
         #contentcont {
@@ -73,6 +75,11 @@
             color: rgb(0, 125, 0);
         }
 
+        @media only screen and (max-width: 400px) {
+            #contentcont .frame {
+                flex-basis: 90vw;
+            }
+        }
     </style>
 
 
@@ -92,15 +99,15 @@
                                 <a href="karriere.html">Karriere</a>
                                 <a href="kontakt.html">Kontakt</a>
                             </div>
-                            <div class="navmnu2" onmouseleave="HideMnu()">
-                                <div id="SmallMnu" class="navmenusmallhidden">
+                            <div id="navmenu2" class="navmnu2" onmouseleave="HideMnu()">
+                                <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
+                                <div id="SmallMnu" class="navmenusmallvisible">
                                     <a href="index.html">Home</a>
                                     <a href="unternehmen.html">Unternehmen</a>
                                     <a href="leistungen.html">Leistungen</a>
                                     <a href="karriere.html">Karriere</a>
                                     <a href="kontakt.html">Kontakt</a>
                                 </div>
-                                <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
                             </div>
                         </td>
                     </tr>
@@ -148,7 +155,7 @@
                     </tr>
                     <tr>
                         <td style="background: rgb(70,70,70);">
-                            <div class="footercont">
+                            <div id="footercont" class="footercont">
                                 <img src="images/logo72.svg" class="logo">
                                 <div class="lownavmenu">
                                     <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
@@ -170,14 +177,14 @@
                 </table>
                 <script>
                     function ShowMnu() {
-                        document.getElementById("SmallMnu").className = "navmenusmallvisible";
+                        document.getElementById("contentcont").style.opacity = "0.1";
+                        document.getElementById("footercont").style.opacity = "0.1";
                     }
 
                     function HideMnu() {
-                        document.getElementById("SmallMnu").className = "navmenusmallhidden";
-
+                        document.getElementById("contentcont").style.opacity = "1";
+                        document.getElementById("footercont").style.opacity = "1";
                     }
-
                 </script>
             </div>
         </div>
