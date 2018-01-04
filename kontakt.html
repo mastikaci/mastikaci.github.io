@@ -13,54 +13,13 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png">
 
     <style>
-        .navmenu a {
-            font-family: 'owndig';
-            text-decoration: none;
+        #navmenu a {
             color: rgb(240, 240, 240);
-            font-size: 10pt; //border:1px solid black;
-            flex-basis: 0;
-            flex-grow: 1;
-            padding: 10pt;
             background: rgba(0, 0, 0, 0.6);
         }
 
-        .navmenu a:hover {
+        #navmenu a:hover {
             background: rgba(0, 0, 0, 0);
-        }
-
-        .navmenusmallvisible a {
-            font-family: 'owndig';
-            text-decoration: none;
-            color: rgb(240, 240, 240);
-            font-size: 10pt;
-            flex-basis: 0;
-            flex-grow: 1;
-            padding: 10pt;
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-        .navmenusmallvisible a:hover {
-            background: rgba(0, 0, 0, 0);
-            color: black;
-        }
-
-        #contentcont {
-            display: flex;
-            -webkit-flex-flow: row wrap;
-            justify-content: center;
-            align-items: baseline;
-        }
-
-        #contentcont .frame {
-            display: flex;
-            -webkit-flex-flow: column wrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-grow: 0;
-            flex-basis: 80vw; //box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            //border: 1px solid red;
-            margin-top: 30pt;
-            margin-bottom: 30pt;
         }
 
         .frame>div {
@@ -91,117 +50,114 @@
                 flex-basis: 90vw;
             }
         }
+
     </style>
 
 
 </head>
 
 <body>
-    <div class="outerdiv">
-        <div class="innerdiv">
-            <div class="element">
-                <table style="width:100vw;">
-                    <tr>
-                        <td class="mainimg" style="background-image:url(images/ktkt.jpg)">
-                            <div class="navmenu">
-                                <a href="index.html">Home</a>
-                                <a href="unternehmen.html">Unternehmen</a>
-                                <a href="leistungen.html">Leistungen</a>
-                                <a href="karriere.html">Karriere</a>
-                                <a href="kontakt.html">Kontakt</a>
+
+    <table>
+        <tr>
+            <td class="mainimg" style="background-image:url(images/ktkt.jpg)">
+                <div id="navmenu" class="navmenu">
+                    <a href="index.html">Home</a>
+                    <a href="unternehmen.html">Unternehmen</a>
+                    <a href="leistungen.html">Leistungen</a>
+                    <a href="karriere.html">Karriere</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div id="navmenu2" class="navmnu2" onmouseleave="HideMnu()">
+                    <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
+                    <div id="SmallMnu" class="navmenusmallvisible">
+                        <a href="index.html">Home</a>
+                        <a href="unternehmen.html">Unternehmen</a>
+                        <a href="leistungen.html">Leistungen</a>
+                        <a href="karriere.html">Karriere</a>
+                        <a href="kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="contentcont" class="contentcont">
+                    <div class="frame">
+                        <h1>Kontaktieren Sie uns ...</h1>
+                        <div style="font-size:12pt;">
+                            <p>Sie möchten mehr über uns und unser Leistungsspektrum erfahren, Sie haben eine Frage zu einem unserer Jobangebote oder Projekten oder ein besonderes Anliegen? Kontaktieren Sie uns ... </p>
+                            <p>Für allgemeine Anfragen: <a href="mailto:info@gtech.pro" style="color:green">info@gtech.pro</a></p>
+                            <p>Für Bewerbungen: <a href="mailto:bwerbung@gtech.pro" style="color:green">bewerbung@gtech.pro</a></p>
+                        </div>
+                        <div style="position:relative;margin-top:10pt;">
+                            <div id="map" style="width:100%;height:400px;">
+                                <script>
+                                    mapboxgl.accessToken = 'pk.eyJ1IjoibWF4ZGVob25kdCIsImEiOiJjamI2cWMxdTgwdHczMzJxcHFmNDB1bjhvIn0.BXKflhzsXxNAdVB641DaQQ';
+                                    var map = new mapboxgl.Map({
+                                        container: 'map',
+                                        style: 'mapbox://styles/mapbox/streets-v9',
+                                        zoom: 7,
+                                        pitchWithRotate: false,
+                                        center: [5.137940, 51.070745],
+                                    });
+
+                                    var marker = document.createElement('div');
+                                    marker.className = 'mapicon';
+                                    new mapboxgl.Marker(marker)
+                                        .setLngLat([5.137940, 51.070745])
+                                        .addTo(map);
+
+                                    var popup = new mapboxgl.Popup({
+                                            closeOnClick: false
+                                        })
+                                        .setLngLat([5.137940, 51.070745])
+                                        .setHTML('<p style="margin:0pt;padding:0;font-size:12pt"><b><i>G-Tech</i></b></p><p style="margin:0pt;padding:0;font-size:12pt">Tusvoort 24</p><p style="margin:0pt;padding:0;font-size:12pt">B-3980 Tessenderlo</p><p style="margin:6pt 0pt -3pt 0pt;padding:0;font-size:11pt"><span style="font-size:14.5pt">&#9990; &nbsp</span><a href="tel:+4917639724237" style="text-decoration:none;color:rgb(72, 72, 72)"> +49 (0) 176 3972 4237</a></p><p style="margin:0pt;padding:0;font-size:12pt;vertical-align:top;"><span style="font-size:15.5pt">&#9993; &nbsp</span> <a href="mailto:info@gtech.pro" style="color:green;">info@gtech.pro</a></p><p style="margin:0pt;padding:0;font-size:12pt"><span style="font-size:13pt">&#64; &nbsp </span> <a href="index.html" style="text-decoration:none;color:grey;">www.gtech.pro</a></p>')
+                                        .addTo(map);
+
+                                </script>
+
                             </div>
-                            <div id="navmenu2" class="navmnu2" onmouseleave="HideMnu()">
-                                <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
-                                <div id="SmallMnu" class="navmenusmallvisible">
-                                    <a href="index.html">Home</a>
-                                    <a href="unternehmen.html">Unternehmen</a>
-                                    <a href="leistungen.html">Leistungen</a>
-                                    <a href="karriere.html">Karriere</a>
-                                    <a href="kontakt.html">Kontakt</a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div id="contentcont">
-                                <div class="frame">
-                                    <h1>Kontaktieren Sie uns ...</h1>
-                                    <div style="font-size:12pt;">
-                                        <p>Sie möchten mehr über uns und unser Leistungsspektrum erfahren, Sie haben eine Frage zu einem unserer Jobangebote oder Projekten oder ein besonderes Anliegen? Kontaktieren Sie uns ... </p>
-                                        <p>Für allgemeine Anfragen: <a href="mailto:info@gtech.pro" style="color:green">info@gtech.pro</a></p>
-                                        <p>Für Bewerbungen: <a href="mailto:bwerbung@gtech.pro" style="color:green">bewerbung@gtech.pro</a></p>
-                                    </div>
-                                    <div style="position:relative;margin-top:10pt;">
-                                        <div id="map" style="width:100%;height:400px;">
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="background: rgb(70,70,70);">
+                <div id="footercont" class="footercont">
+                    <img src="images/logo72.svg" class="logo">
+                    <div class="lownavmenu">
+                        <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
+                    </div>
+                    <div class="footer">
+                        <a href="datenschutz.html">Datenschutz &nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
+                        <a href="impressum.html">Impressum &nbsp&nbsp&nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cpyrightbase">
+                    <div>&copy; 2012<strong>&nbspG-Tech</strong>. Alle Rechte vorbehalten.</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function ShowMnu() {
+            document.getElementById("contentcont").style.opacity = "0.1";
+            document.getElementById("footercont").style.opacity = "0.1";
+        }
 
+        function HideMnu() {
+            document.getElementById("contentcont").style.opacity = "1";
+            document.getElementById("footercont").style.opacity = "1";
+        }
 
-                                            <script>
-                                                mapboxgl.accessToken = 'pk.eyJ1IjoibWF4ZGVob25kdCIsImEiOiJjamI2cWMxdTgwdHczMzJxcHFmNDB1bjhvIn0.BXKflhzsXxNAdVB641DaQQ';
-                                                var map = new mapboxgl.Map({
-                                                    container: 'map',
-                                                    style: 'mapbox://styles/mapbox/streets-v9',
-                                                    zoom: 7,
-                                                    pitchWithRotate: false,
-                                                    center: [5.137940, 51.070745],
-                                                });
+    </script>
 
-                                                var marker = document.createElement('div');
-                                                marker.className = 'mapicon';
-                                                new mapboxgl.Marker(marker)
-                                                    .setLngLat([5.137940, 51.070745])
-                                                    .addTo(map);
-
-                                                var popup = new mapboxgl.Popup({
-                                                        closeOnClick: false
-                                                    })
-                                                    .setLngLat([5.137940, 51.070745])
-                                                    .setHTML('<p style="margin:0pt;padding:0;font-size:12pt"><b><i>G-Tech</i></b></p><p style="margin:0pt;padding:0;font-size:12pt">Tusvoort 24</p><p style="margin:0pt;padding:0;font-size:12pt">B-3980 Tessenderlo</p><p style="margin:6pt 0pt -3pt 0pt;padding:0;font-size:11pt"><span style="font-size:14.5pt">&#9990; &nbsp</span> +49 (0) 176 3972 4237</p><p style="margin:0pt;padding:0;font-size:12pt;vertical-align:top;"><span style="font-size:15.5pt">&#9993; &nbsp</span> <a href="mailto:info@gtech.pro" style="color:green;">info@gtech.pro</a></p><p style="margin:0pt;padding:0;font-size:12pt"><span style="font-size:13pt">&#64; &nbsp </span> <a href="index.html" style="text-decoration:none;color:grey;">www.gtech.pro</a></p>')
-                                                    .addTo(map);
-                                            </script>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="background: rgb(70,70,70);">
-                            <div id="footercont" class="footercont">
-                                <img src="images/logo72.svg" class="logo">
-                                <div class="lownavmenu">
-                                    <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
-                                </div>
-                                <div class="footer">
-                                    <a href="datenschutz.html">Datenschutz &nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
-                                    <a href="impressum.html">Impressum &nbsp&nbsp&nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="cpyrightbase">
-                                <div>&copy; 2012<strong>&nbspG-Tech</strong>. Alle Rechte vorbehalten.</div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <script>
-                    function ShowMnu() {
-                        document.getElementById("contentcont").style.opacity = "0.1";
-                        document.getElementById("footercont").style.opacity = "0.1";
-                    }
-
-                    function HideMnu() {
-                        document.getElementById("contentcont").style.opacity = "1";
-                        document.getElementById("footercont").style.opacity = "1";
-                    }
-                </script>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

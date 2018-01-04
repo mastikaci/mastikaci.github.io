@@ -12,57 +12,14 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png">
 
     <style>
-        .navmenu a {
-            font-family: 'owndig';
-            text-decoration: none;
+        #navmenu a {
             color: rgb(240, 240, 240); //color: rgb(0,0,0);
-            font-size: 10pt; //border:1px solid black;
-            flex-basis: 0;
-            flex-grow: 1;
-            padding: 10pt;
             background: rgba(255, 255, 255, 0.11);
 
         }
 
-        .navmenu a:hover {
-
+        #navmenu a:hover {
             background: rgba(0, 0, 0, 0);
-
-        }
-
-        .navmenusmallvisible a {
-            font-family: 'owndig';
-            text-decoration: none;
-            color: rgb(240, 240, 240);
-            font-size: 10pt;
-            flex-basis: 0;
-            flex-grow: 1;
-            padding: 10pt;
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-        .navmenusmallvisible a:hover {
-            background: rgba(0, 0, 0, 0);
-            color: black;
-        }
-
-        #contentcont {
-            display: flex;
-            -webkit-flex-flow: row wrap;
-            justify-content: center;
-            align-items: baseline;
-        }
-
-        #contentcont .frame {
-            display: flex;
-            -webkit-flex-flow: column wrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-grow: 0;
-            flex-basis: 80vw; //box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            //border: 1px solid red;
-            margin-top: 30pt;
-            margin-bottom: 30pt;
         }
 
         .frame>div {
@@ -120,6 +77,10 @@
             color: rgb(0, 125, 0);
         }
 
+        ul>li {
+            text-align: left;
+        }
+
         @media only screen and (max-width: 400px) {
             #contentcont .frame {
                 flex-basis: 90vw;
@@ -131,125 +92,160 @@
 </head>
 
 <body>
-    <div class="outerdiv">
-        <div class="innerdiv">
-            <div class="element">
-                <table style="width:100vw;">
-                    <tr>
-                        <td class="mainimg" style="background-image:url(images/stw90p2.jpg)">
-                            <div class="navmenu">
-                                <a href="index.html">Home</a>
-                                <a href="unternehmen.html">Unternehmen</a>
-                                <a href="leistungen.html">Leistungen</a>
-                                <a href="karriere.html">Karriere</a>
-                                <a href="kontakt.html">Kontakt</a>
-                            </div>
-                            <div id="navmenu2" class="navmnu2" onmouseleave="HideMnu()">
-                                <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
-                                <div id="SmallMnu" class="navmenusmallvisible">
-                                    <a href="index.html">Home</a>
-                                    <a href="unternehmen.html">Unternehmen</a>
-                                    <a href="leistungen.html">Leistungen</a>
-                                    <a href="karriere.html">Karriere</a>
-                                    <a href="kontakt.html">Kontakt</a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div id="contentcont">
-                                <div class="frame">
-                                    <h1>Ihr Karriereschub ... </h1>
-                                    <div style="font-size:12pt;">
-                                        <p>Der Verstand ist ein schreckliches Ding zu verschwenden, aber ein wunderbares Ding, in die man investieren kann. Es kommt nicht immer auf das Alter oder die Erfahrung an, denn es sind meistens die kleinsten Füße, die die größten Spuren hinterlassen. Deshalb sollten Sie niemals zögern, die Initiative zu ergreifen.</p>
-                                        <p>Arbeiten bei G-Tech muss sich lohnen ... für alle! Wir suchen Mitarbeiter, die Mehrwert kreieren und Freude an ihrer Arbeit haben. Auf der anderen Seite bieten wir Ihnen Entwicklungsmöglichkeiten und angemessene Löhne.</p>
-                                        <p>Sie sind bereit Verantwortung zu übernehmen in den Bereichen SW-Architektur, SW-Implementierung, SW-Integration, SW-Kalibrierung und/oder SW-Verifikation und finden sich in einer unserer aktuellen Stellen- oder Projektangebote? Sie glauben an Ihre Fähigkeiten und können sich mit uns identifizieren? Dann bewerben Sie sich bitte umgehend per E-mail unter <b><a href="mailto:bewerbung@gtech.pro" style="color:green">bewerbung@gtech.pro</b></a> mit Angabe der Referenznummer.</p>
-                                        <p style="margin-top:30pt;"><b>Unsere aktuellen Stellenangebote:</b></p>
-                                    </div>
-                                    <div id="Jobs">
-                                        <!--
-                            <div id="JobTitle1" class="Jobtitle" onclick="ShowDescr('JobDescr1','spec1')"><span id="spec1">&nbsp &#x25B8; &nbsp</span> Ref.Nr : Stellenangebot 1 in NRW </div>
+
+    <table>
+        <tr>
+            <td class="mainimg" style="background-image:url(images/stw90p2.jpg)">
+                <div id="navmenu" class="navmenu">
+                    <a href="index.html">Home</a>
+                    <a href="unternehmen.html">Unternehmen</a>
+                    <a href="leistungen.html">Leistungen</a>
+                    <a href="karriere.html">Karriere</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div id="navmenu2" class="navmnu2" onmouseleave="HideMnu()">
+                    <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
+                    <div id="SmallMnu" class="navmenusmallvisible">
+                        <a href="index.html">Home</a>
+                        <a href="unternehmen.html">Unternehmen</a>
+                        <a href="leistungen.html">Leistungen</a>
+                        <a href="karriere.html">Karriere</a>
+                        <a href="kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="contentcont" class="contentcont">
+                    <div class="frame">
+                        <h1>Ihr Karriereschub ... </h1>
+                        <div style="font-size:12pt;">
+                            <p>Der Verstand ist ein schreckliches Ding zu verschwenden, aber ein wunderbares Ding, in die man investieren kann. Es kommt nicht immer auf das Alter oder die Erfahrung an, denn es sind meistens die kleinsten Füße, die die größten Spuren hinterlassen. Deshalb sollten Sie niemals zögern, die Initiative zu ergreifen.</p>
+                            <p>Arbeiten bei G-Tech muss sich lohnen ... für alle! Wir suchen Mitarbeiter, die Mehrwert kreieren und Freude an ihrer Arbeit haben. Auf der anderen Seite bieten wir Ihnen Entwicklungsmöglichkeiten und angemessene Löhne.</p>
+                            <p>Sie sind bereit Verantwortung zu übernehmen in den Bereichen SW-Architektur, SW-Implementierung, SW-Integration, SW-Kalibrierung und/oder SW-Verifikation und finden sich in einer unserer aktuellen Stellen- oder Projektangebote? Sie glauben an Ihre Fähigkeiten und können sich mit uns identifizieren? Dann bewerben Sie sich bitte umgehend per E-mail unter <b><a href="mailto:bewerbung@gtech.pro" style="color:green">bewerbung@gtech.pro</b></a> mit Angabe der Referenznummer.</p>
+                            <p style="margin-top:30pt;"><b>Unsere aktuellen Stellenangebote:</b></p>
+                        </div>
+                        <div id="Jobs">
+
+                            <div id="JobTitle1" class="Jobtitle" onclick="ShowDescr('JobDescr1','spec1')"><span id="spec1">&nbsp &#x25B8; &nbsp</span> Ref.Nr 001: Ingenieur Regelung Elektrische Antriebe in PLZ 80xxx </div>
                             <div id="JobDescr1" class="JobDescr">
                                 <p><b>Aufgaben:</b></p>
                                 <ul>
-                                    <li>Aufgabe 1</li>
-                                    <li>Aufgabe 2</li>
+                                    <li>Entwicklung SW für einen E-Maschinenregelung</li>
+                                    <li>Simulation der Regelung an Prüfständen</li>
+                                    <li>Inbetriebnahme, Kalibrierung und Verifikation</li>
+                                    <li>Dokumentation der Arbeiten</li>
                                 </ul>
                                 <p style="padding-top:20px;"><b>Anforderungen:</b></p>
                                 <ul>
-                                    <li>Anforderung 1</li>
-                                    <li>Anforderung 2</li>
+                                    <li>Ingenieur Elektrotechnik, Schwerpunkt Elektrische Antriebe oder Regelungtechnik</li>
+                                    <li>Praxiserfahrung</li>
+                                    <li>Modellbasierte Entwicklung mit Matlab/Simulink und/oder C</li>
+                                    <li>Selbständig und zielorientiert</li>
                                 </ul>
                             </div>
-                            <div id="JobTitle2" class="Jobtitle" onclick="ShowDescr('JobDescr2','spec2')"><span id="spec2">&nbsp &#x25B8; &nbsp</span> Ref.Nr. 0000: Initiativbewerbung in PLZ? </div>
+                            <div id="JobTitle2" class="Jobtitle" onclick="ShowDescr('JobDescr2','spec2')"><span id="spec2">&nbsp &#x25B8; &nbsp</span> Ref.Nr 002: Ingenieur Leistungselektronik in PLZ 80xxx </div>
                             <div id="JobDescr2" class="JobDescr">
                                 <p><b>Aufgaben:</b></p>
                                 <ul>
+                                    <li>Entwicklung und Auslegung HV/LV Leistungselektroniken</li>
+                                    <li>Simulation der Schaltungen</li>
+                                    <li>Laboraufbauten für Erprobung, Inbetriebnahme und Absicherung</li>
+                                    <li>Dokumentation der Arbeiten</li>
+                                </ul>
+                                <p style="padding-top:20px;"><b>Anforderungen:</b></p>
+                                <ul>
+                                    <li>Ingenieur Elektrotechnik, Schwerpunkt Elektrische Antriebe</li>
+                                    <li>Bauteilkenntnisse Leistungselektronik</li>
+                                    <li>Kenntnisse über Ansteuerung und Kühlung Leistungselektronik</li>
+                                    <li>Simulationstools ECAD </li>
+                                    <li>Selbständig und analytisch</li>
+                                </ul>
+                            </div>
+                            <div id="JobTitle3" class="Jobtitle" onclick="ShowDescr('JobDescr3','spec3')"><span id="spec3">&nbsp &#x25B8; &nbsp</span> Ref.Nr 003: Ingenieur Elektrische Maschinen in PLZ 80xxx </div>
+                            <div id="JobDescr3" class="JobDescr">
+                                <p><b>Aufgaben:</b></p>
+                                <ul>
+                                    <li>Auslegung Elektrische Maschinen</li>
+                                    <li>FEM Berechnungen</li>
+                                    <li>Zusammnenarbiet für kostengünstige Konstruktion</li>
+                                    <li>Dokumentation der Arbeiten</li>
+                                </ul>
+                                <p style="padding-top:20px;"><b>Anforderungen:</b></p>
+                                <ul>
+                                    <li>Ingenieur Elektrotechnik, Schwerpunkt Elektrische Antriebe</li>
+                                    <li>Praxiserfahrung</li>
+                                    <li>Kenntnisse Wirkung und Berechnung E-Maschinen</li>
+                                    <li>Selbständig und analytisch</li>
+                                </ul>
+                            </div>
+                            <div id="JobTitle" class="Jobtitle" onclick="ShowDescr('JobDescr','spec')"><span id="spec">&nbsp &#x25B8; &nbsp</span> Ref.Nr. 000: Initiativbewerbung</div>
+                            <div id="JobDescr" class="JobDescr">
+                                <p><b>Aufgaben:</b></p>
+                                <ul>
                                     <li>In welche Tätigkeiten sind Sie interessiert?</li>
-                                    <li>An welchem Ort?</li>
+                                    <li>in PLZ ?</li>
                                 </ul>
                                 <p style="padding-top:20px;"><b>Anforderungen:</b></p>
                                 <ul>
                                     <li>Was sind Ihre Qualifikationen?</li>
                                 </ul>
                             </div>
--->
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="background: rgb(70,70,70);">
-                            <div id="footercont" class="footercont">
-                                <img src="images/logo72.svg" class="logo">
-                                <div class="lownavmenu">
-                                    <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
-                                </div>
-                                <div class="footer">
-                                    <a href="datenschutz.html">Datenschutz &nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
-                                    <a href="impressum.html">Impressum &nbsp&nbsp&nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="cpyrightbase">
-                                <div>&copy; 2012<strong>&nbspG-Tech</strong>. Alle Rechte vorbehalten.</div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <script>
-                    function ShowDescr(iddesc, idspec) {
-                        //var str = document.getElementById(idtit).innerHTML;
-                        var elem1 = document.getElementById(iddesc);
-                        var style = window.getComputedStyle(elem1).getPropertyValue('display');
-                        if (style == "none") {
-                            document.getElementById(iddesc).style.display = "block";
-                            document.getElementById(idspec).innerHTML = "&nbsp &#x25BE; &nbsp ";
 
-                        } else {
-                            document.getElementById(iddesc).style.display = "none";
-                            document.getElementById(idspec).innerHTML = "&nbsp &#x25B8; &nbsp ";
-                        }
-                    }
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="background: rgb(70,70,70);">
+                <div id="footercont" class="footercont">
+                    <img src="images/logo72.svg" class="logo">
+                    <div class="lownavmenu">
+                        <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
+                    </div>
+                    <div class="footer">
+                        <a href="datenschutz.html">Datenschutz &nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
+                        <a href="impressum.html">Impressum &nbsp&nbsp&nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cpyrightbase">
+                    <div>&copy; 2012<strong>&nbspG-Tech</strong>. Alle Rechte vorbehalten.</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function ShowDescr(iddesc, idspec) {
+            //var str = document.getElementById(idtit).innerHTML;
+            var elem1 = document.getElementById(iddesc);
+            var style = window.getComputedStyle(elem1).getPropertyValue('display');
+            if (style == "none") {
+                document.getElementById(iddesc).style.display = "block";
+                document.getElementById(idspec).innerHTML = "&nbsp &#x25BE; &nbsp ";
 
-                    function ShowMnu() {
-                        document.getElementById("contentcont").style.opacity = "0.1";
-                        document.getElementById("footercont").style.opacity = "0.1";
-                    }
+            } else {
+                document.getElementById(iddesc).style.display = "none";
+                document.getElementById(idspec).innerHTML = "&nbsp &#x25B8; &nbsp ";
+            }
+        }
 
-                    function HideMnu() {
-                        document.getElementById("contentcont").style.opacity = "1";
-                        document.getElementById("footercont").style.opacity = "1";
-                    }
-                </script>
-            </div>
-        </div>
-    </div>
+        function ShowMnu() {
+            document.getElementById("contentcont").style.opacity = "0.1";
+            document.getElementById("footercont").style.opacity = "0.1";
+        }
+
+        function HideMnu() {
+            document.getElementById("contentcont").style.opacity = "1";
+            document.getElementById("footercont").style.opacity = "1";
+        }
+    </script>
+
 </body>
 
 </html>

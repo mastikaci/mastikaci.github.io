@@ -12,54 +12,13 @@
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <style>
-        .navmenu a {
-            font-family: 'owndig';
-            text-decoration: none;
+        #navmenu a {
             color: rgb(240, 240, 240);
-            font-size: 10pt; //border:1px solid black;
-            flex-basis: auto;
-            flex-grow: 1;
-            padding: 10pt;
             background: rgba(205, 205, 205, 0.25);
         }
 
-        .navmenu a:hover {
+        #navmenu a:hover {
             background: rgba(0, 0, 0, 0);
-        }
-
-        .navmenusmallvisible a {
-            font-family: 'owndig';
-            text-decoration: none;
-            color: rgb(240, 240, 240);
-            font-size: 10pt;
-            flex-basis: auto;
-            flex-grow: 1;
-            padding: 10pt;
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-        .navmenusmallvisible a:hover {
-            background: rgba(0, 0, 0, 0);
-            color: black;
-        }
-
-        #contentcont {
-            display: flex;
-            -webkit-flex-flow: row wrap;
-            justify-content: center;
-            align-items: baseline;
-        }
-
-        #contentcont .frame {
-            display: flex;
-            -webkit-flex-flow: column wrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-grow: 0;
-            flex-basis: 80vw; //box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            //border: 1px solid red;
-            margin-top: 30pt;
-            margin-bottom: 30pt;
         }
 
         .frame>div {
@@ -90,7 +49,7 @@
     <table>
         <tr>
             <td class="mainimg" style="background-image:url(images/spdmp85.jpg)">
-                <div class="navmenu">
+                <div id="navmenu" class="navmenu">
                     <a href="index.html">Home</a>
                     <a href="unternehmen.html">Unternehmen</a>
                     <a href="leistungen.html">Leistungen</a>
@@ -111,7 +70,7 @@
         </tr>
         <tr>
             <td>
-                <div id="contentcont">
+                <div id="contentcont" class="contentcont">
                     <div class="frame">
                         <h1>Impressum ...</h1>
                         <div style="text-align:left:0;margin-bottom:13pt;">
