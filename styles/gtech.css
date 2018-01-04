@@ -1,6 +1,5 @@
  @font-face {
      font-family: 'owndig';
-     font-family: 'Digital Desolation Plus';
      src: url('Digital-Desolation-Plus.eot');
      src: url('Digital-Desolation-Plus.eot?#iefix') format('embedded-opentype'),
      url('Digital-Desolation-Plus.woff2') format('woff2'),
@@ -25,7 +24,6 @@
 
  @font-face {
      font-family: 'owndig3';
-     font-family: 'Scriptina';
      src: url('Scriptina.eot');
      src: url('Scriptina.eot?#iefix') format('embedded-opentype'),
      url('Scriptina.woff2') format('woff2'),
