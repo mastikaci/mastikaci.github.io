@@ -1,20 +1,24 @@
  @font-face {
      font-family: 'owndig';
+     src: url('../fonts/Digital-Desolation-Plus.otf') format('otf');
      src: url('../fonts/Digital-Desolation-Plus.otf');
  }
 
  @font-face {
      font-family: 'owndig2';
+     src: url('../fonts/DIGITALDREAMFAT.ttf') format('truetype');
      src: url('../fonts/DIGITALDREAMFAT.ttf');
  }
 
  @font-face {
      font-family: 'owndig3';
+     src: url('../fonts/SCRIPTIN.ttf') format('truetype');
      src: url('../fonts/SCRIPTIN.ttf');
  }
 
  @font-face {
      font-family: 'owndig4';
+     src: url('../fonts/Reality Hyper Regular.ttf') format('truetype');
      src: url('../fonts/Reality Hyper Regular.ttf');
  }
 
