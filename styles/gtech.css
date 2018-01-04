@@ -213,7 +213,8 @@
          padding-top: 5pt;
          padding-bottom: 5pt;
          background: rgba(0, 0, 0, 0.68);
-         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#AD000000,endColorstr=#AD000000);
+         -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#AD000000,endColorstr=#AD000000)";
+         zoom:1;
          cursor: pointer;
          display: block;
          z-index: 10000;
@@ -247,12 +248,14 @@
          flex: 1 1 100%;
          padding: 10pt;
          background: rgba(0, 0, 0, 0.8);
-         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
+         -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)";
+         zoom:1;
      }
 
      .navmenusmallvisible a:hover {
          background: rgba(0, 0, 0, 0);
-         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
+         -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000)";
+         zoom:1;
          color: black;
      }
  }
