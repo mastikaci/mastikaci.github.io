@@ -1,5 +1,5 @@
  @font-face {
-     font-family: 'owndig';
+     font-family: 'Digital Desolation Plus';
      src: url('Digital-Desolation-Plus.eot');
      src: url('Digital-Desolation-Plus.eot?#iefix') format('embedded-opentype'),
      url('Digital-Desolation-Plus.woff2') format('woff2'),
@@ -11,7 +11,7 @@
  }
 
  @font-face {
-     font-family: 'owndig2';
+     font-family: 'Digital dream Fat';
      src: url('DigitaldreamFat.eot');
      src: url('DigitaldreamFat.eot?#iefix') format('embedded-opentype'),
      url('DigitaldreamFat.woff2') format('woff2'),
@@ -23,7 +23,7 @@
  }
 
  @font-face {
-     font-family: 'owndig3';
+     font-family: 'Scriptina';
      src: url('Scriptina.eot');
      src: url('Scriptina.eot?#iefix') format('embedded-opentype'),
      url('Scriptina.woff2') format('woff2'),
@@ -35,7 +35,7 @@
  }
 
  @font-face {
-     font-family: 'owndig4';
+     font-family: 'Reality Hyper';
      src: url('RealityHyperRegular.eot');
      src: url('RealityHyperRegular.eot?#iefix') format('embedded-opentype'),
      url('RealityHyperRegular.woff2') format('woff2'),
@@ -117,7 +117,7 @@
  }
 
  .footer a {
-     font-family: 'owndig2';
+     font-family: 'Digital dream Fat';
      padding: 3pt;
      text-decoration: none;
      color: rgb(249, 249, 249);
@@ -135,7 +135,7 @@
  }
 
  .lownavmenu a {
-     font-family: 'owndig2';
+     font-family: 'Digital dream Fat';
      font-size: 8pt;
      color: rgb(249, 249, 249);
  }
@@ -183,7 +183,7 @@
  }
 
  .navmenu a {
-     font-family: 'owndig';
+     font-family: 'Digital Desolation Plus';
      text-decoration: none;
      font-size: 10pt; //border:1px solid black;
      flex: 1 1 20%;
@@ -269,7 +269,7 @@
      }
 
      .navmenusmallvisible a {
-         font-family: 'owndig';
+         font-family: 'Digital Desolation Plus';
          text-decoration: none;
          color: rgb(240, 240, 240);
          font-size: 10pt;
