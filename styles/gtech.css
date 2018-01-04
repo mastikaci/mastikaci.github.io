@@ -1,47 +1,47 @@
  @font-face {
      font-family: 'Digital Desolation Plus';
-     src: url('Digital-Desolation-Plus.eot');
-     src: url('Digital-Desolation-Plus.eot?#iefix') format('embedded-opentype'),
-     url('Digital-Desolation-Plus.woff2') format('woff2'),
-     url('Digital-Desolation-Plus.woff') format('woff'),
-     url('Digital-Desolation-Plus.ttf') format('truetype'),
-     url('Digital-Desolation-Plus.svg#Digital-Desolation-Plus') format('svg');
+     src: url('../fonts/Digital-Desolation-Plus.eot');
+     src: url('../fonts/Digital-Desolation-Plus.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/Digital-Desolation-Plus.woff2') format('woff2'),
+     url('../fonts/Digital-Desolation-Plus.woff') format('woff'),
+     url('../fonts/Digital-Desolation-Plus.ttf') format('truetype'),
+     url('../fonts/Digital-Desolation-Plus.svg#Digital-Desolation-Plus') format('svg');
      font-weight: normal;
      font-style: normal;
  }
 
  @font-face {
      font-family: 'Digital dream Fat';
-     src: url('DigitaldreamFat.eot');
-     src: url('DigitaldreamFat.eot?#iefix') format('embedded-opentype'),
-     url('DigitaldreamFat.woff2') format('woff2'),
-     url('DigitaldreamFat.woff') format('woff'),
-     url('DigitaldreamFat.ttf') format('truetype'),
-     url('DigitaldreamFat.svg#DigitaldreamFat') format('svg');
+     src: url('../fonts/DigitaldreamFat.eot');
+     src: url('../fonts/DigitaldreamFat.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/DigitaldreamFat.woff2') format('woff2'),
+     url('../fonts/DigitaldreamFat.woff') format('woff'),
+     url('../fonts/DigitaldreamFat.ttf') format('truetype'),
+     url('../fonts/DigitaldreamFat.svg#DigitaldreamFat') format('svg');
      font-weight: normal;
      font-style: normal;
  }
 
  @font-face {
      font-family: 'Scriptina';
-     src: url('Scriptina.eot');
-     src: url('Scriptina.eot?#iefix') format('embedded-opentype'),
-     url('Scriptina.woff2') format('woff2'),
-     url('Scriptina.woff') format('woff'),
-     url('Scriptina.ttf') format('truetype'),
-     url('Scriptina.svg#Scriptina') format('svg');
+     src: url('../fonts/Scriptina.eot');
+     src: url('../fonts/Scriptina.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/Scriptina.woff2') format('woff2'),
+     url('../fonts/Scriptina.woff') format('woff'),
+     url('../fonts/Scriptina.ttf') format('truetype'),
+     url('../fonts/Scriptina.svg#Scriptina') format('svg');
      font-weight: normal;
      font-style: normal;
  }
 
  @font-face {
      font-family: 'Reality Hyper';
-     src: url('RealityHyperRegular.eot');
-     src: url('RealityHyperRegular.eot?#iefix') format('embedded-opentype'),
-     url('RealityHyperRegular.woff2') format('woff2'),
-     url('RealityHyperRegular.woff') format('woff'),
-     url('RealityHyperRegular.ttf') format('truetype'),
-     url('RealityHyperRegular.svg#RealityHyperRegular') format('svg');
+     src: url('../fonts/RealityHyperRegular.eot');
+     src: url('../fonts/RealityHyperRegular.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/RealityHyperRegular.woff2') format('woff2'),
+     url('../fonts/RealityHyperRegular.woff') format('woff'),
+     url('../fonts/RealityHyperRegular.ttf') format('truetype'),
+     url('../fonts/RealityHyperRegular.svg#RealityHyperRegular') format('svg');
      font-weight: normal;
      font-style: normal;
  }
