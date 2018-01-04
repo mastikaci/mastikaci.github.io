@@ -1,25 +1,51 @@
  @font-face {
      font-family: 'owndig';
-     src: url('../fonts/Digital-Desolation-Plus.otf') format('otf');
-     src: url('../fonts/Digital-Desolation-Plus.otf');
+     font-family: 'Digital Desolation Plus';
+     src: url('Digital-Desolation-Plus.eot');
+     src: url('Digital-Desolation-Plus.eot?#iefix') format('embedded-opentype'),
+     url('Digital-Desolation-Plus.woff2') format('woff2'),
+     url('Digital-Desolation-Plus.woff') format('woff'),
+     url('Digital-Desolation-Plus.ttf') format('truetype'),
+     url('Digital-Desolation-Plus.svg#Digital-Desolation-Plus') format('svg');
+     font-weight: normal;
+     font-style: normal;
  }
 
  @font-face {
      font-family: 'owndig2';
-     src: url('../fonts/DIGITALDREAMFAT.ttf') format('truetype');
-     src: url('../fonts/DIGITALDREAMFAT.ttf');
+     src: url('DigitaldreamFat.eot');
+     src: url('DigitaldreamFat.eot?#iefix') format('embedded-opentype'),
+     url('DigitaldreamFat.woff2') format('woff2'),
+     url('DigitaldreamFat.woff') format('woff'),
+     url('DigitaldreamFat.ttf') format('truetype'),
+     url('DigitaldreamFat.svg#DigitaldreamFat') format('svg');
+     font-weight: normal;
+     font-style: normal;
  }
 
  @font-face {
      font-family: 'owndig3';
-     src: url('../fonts/SCRIPTIN.ttf') format('truetype');
-     src: url('../fonts/SCRIPTIN.ttf');
+     font-family: 'Scriptina';
+     src: url('Scriptina.eot');
+     src: url('Scriptina.eot?#iefix') format('embedded-opentype'),
+     url('Scriptina.woff2') format('woff2'),
+     url('Scriptina.woff') format('woff'),
+     url('Scriptina.ttf') format('truetype'),
+     url('Scriptina.svg#Scriptina') format('svg');
+     font-weight: normal;
+     font-style: normal;
  }
 
  @font-face {
      font-family: 'owndig4';
-     src: url('../fonts/Reality Hyper Regular.ttf') format('truetype');
-     src: url('../fonts/Reality Hyper Regular.ttf');
+     src: url('RealityHyperRegular.eot');
+     src: url('RealityHyperRegular.eot?#iefix') format('embedded-opentype'),
+     url('RealityHyperRegular.woff2') format('woff2'),
+     url('RealityHyperRegular.woff') format('woff'),
+     url('RealityHyperRegular.ttf') format('truetype'),
+     url('RealityHyperRegular.svg#RealityHyperRegular') format('svg');
+     font-weight: normal;
+     font-style: normal;
  }
 
 
@@ -217,8 +243,8 @@
          padding-top: 5pt;
          padding-bottom: 5pt;
          background: rgba(0, 0, 0, 0.68);
-         -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#AD000000,endColorstr=#AD000000)";
-         zoom:1;
+         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#AD000000,endColorstr=#AD000000)";
+         zoom: 1;
          cursor: pointer;
          display: block;
          z-index: 10000;
@@ -252,14 +278,14 @@
          flex: 1 1 100%;
          padding: 10pt;
          background: rgba(0, 0, 0, 0.8);
-         -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)";
-         zoom:1;
+         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)";
+         zoom: 1;
      }
 
      .navmenusmallvisible a:hover {
          background: rgba(0, 0, 0, 0);
-         -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000)";
-         zoom:1;
+         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000)";
+         zoom: 1;
          color: black;
      }
  }
@@ -270,7 +296,7 @@
      background-position: top center;
      height: 37.5vw;
      width: 100vw;
-     background-size: 100% 100%;
+     background-size: cover;
      text-align: center;
      vertical-align: bottom;
      margin: 0;
