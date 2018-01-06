@@ -188,6 +188,7 @@
      font-size: 10pt; //border:1px solid black;
      flex: 1 1 20%;
      padding: 10pt;
+     display: block;
  }
 
  .navmnu2 {
@@ -202,16 +203,16 @@
      display: none;
  }
 
-.navmenusmallvisible a{
+ .navmenusmallvisible a {
      display: none;
  }
 
  @media only screen and (max-width: 850px) {
-     .navmenu{
+     .navmenu {
          display: none;
      }
-     
-     .navmenu a{
+
+     .navmenu a {
          display: none;
      }
 
@@ -231,8 +232,7 @@
          align-items: stretch;
          -ms-flex-align: stretch;
          cursor: pointer;
-         width: 100%; 
-         //z-index: 1;
+         width: 100%; //z-index: 1;
      }
 
      .mnuic {
@@ -282,6 +282,7 @@
          padding: 10pt;
          background: rgba(0, 0, 0, 0.9);
          -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000)";
+         display: block;
          zoom: 1;
      }
 
