@@ -206,6 +206,10 @@
      .navmenu{
          display: none;
      }
+     
+     .navmenu a{
+         display: none;
+     }
 
      .navmnu2 {
          //position:relative;
