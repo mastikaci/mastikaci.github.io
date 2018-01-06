@@ -652,8 +652,8 @@
                     <a href="karriere.html">Karriere</a>
                     <a href="kontakt.html">Kontakt</a>
                 </div>
-                <div id="navmenu2" class="navmnu2" onmouseout="HideMnu()">
-                    <div class="mnuic" onmouseover="ShowMnu()">&#9776;</div>
+                <div id="navmenu2" class="navmnu2">
+                    <div class="mnuic" onclick="TglMnu()">&#9776;</div>
                     <div id="SmallMnu" class="navmenusmallvisible">
                         <a href="index.html">Home</a>
                         <a href="unternehmen.html">Unternehmen</a>
@@ -811,6 +811,18 @@
         function HideMnu() {
             document.getElementById("contentcont").style.opacity = "1";
             document.getElementById("footercont").style.opacity = "1";
+        }
+        
+        function TglMnu() {
+            var div = document.getElementById("SmallMnu");
+            if (div.style.display == "none"){
+                div.style.display = "flex";
+               
+            }else{
+                div.style.display = "none";
+                document.getElementById("contentcont").style.opacity = "1";
+                document.getElementById("footercont").style.opacity = "1";
+            }
         }
         
         var slideIndex2 = 0;
