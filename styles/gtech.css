@@ -201,11 +201,18 @@
 
  .navmenusmallvisible {
      display: none;
+     visibility:visible;
  }
 
  .navmenusmallvisible a {
      display: none;
  }
+
+.chbox {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
 
  @media only screen and (max-width: 850px) {
      .navmenu {
@@ -271,7 +278,12 @@
          -ms-flex-align: center;
          width: 100%;
          z-index: 1;
+         visibility:visible;
      }
+     
+     .chbox:checked ~ .navmenusmallvisible {
+            visibility:hidden;
+        }
 
      .navmenusmallvisible a {
          font-family: 'Digital Desolation Plus';
