@@ -202,6 +202,10 @@
      display: none;
  }
 
+.navmenusmallvisible a{
+     display: none;
+ }
+
  @media only screen and (max-width: 850px) {
      .navmenu{
          display: none;
