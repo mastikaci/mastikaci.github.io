@@ -278,8 +278,8 @@
      }
 
      .navmenusmallvisible a:hover {
-         background: rgba(0, 0, 0, 0);
-         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000)";
+         background: rgba(255, 255, 255, 0.9);
+         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5FFFFFF,endColorstr=#E5FFFFFF)";
          zoom: 1;
          color: black;
      }
