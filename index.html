@@ -53,19 +53,8 @@
         }
 
         #navmenu a:hover {
-            background: rgba(0, 0, 0, 0);
+            background: rgba(255, 255, 255, 0.15);
             color: black;
-        }
-
-        .slide {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            text-align: center;
-            vertical-align: bottom;
-            display: none;
         }
 
         #Sketch20 {
@@ -96,7 +85,8 @@
             animation-fill-mode: forwards;
             animation-delay: 6s;
         }
-
+        
+                
         #Reall40 {
             position: absolute;
             bottom: 0;
@@ -115,7 +105,17 @@
             animation-delay: 10s;
         }
 
-
+        .slide {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            vertical-align: bottom;
+            display:none;
+        }
+        
         #contentcont {
             display: -webkit-box;
             display: -moz-box;
@@ -538,7 +538,7 @@
         .arrow {
             text-decoration: none;
             color: white;
-            background: grey;
+            background: rgba(0,0,0,0.4);
             font-size: 20pt;
             opacity: 0;
             padding-left: 3pt;
@@ -551,9 +551,17 @@
             animation-direction: forwards;
             animation-timing-function: linear;
             animation-fill-mode: forwards;
-            animation-delay: 15s;
+            animation-delay: 15s;  
+            transition-delay: 0s;
+            transition-duration: 0.3s;
+            transition-property: background;
+            transition-timing-function: linear;
         }
 
+        .arrow:hover {
+            background: rgba(0,0,0,1);      
+        }
+        
         @media only screen and (max-width: 1160px) {
             #contentcont {
                 -webkit-flex-flow: column wrap;
@@ -643,8 +651,8 @@
                 <div><img class="slide" src="images/lst.jpg"></div>
                 <div><img class="slide" src="images/stw90.jpg"></div>
                 <div><img class="slide" src="images/ktkt2.jpg"></div>
-                <div style="position:absolute;left:1.5vw;bottom:52%;"><a href="#" class="arrow" onclick="shiftSlide(-1)">&#10094</a></div>
-                <div style="position:absolute;right:1.5vw;bottom:52%;"><a href="#" class="arrow" onclick="shiftSlide(1)">&#10095</a></div>
+                <div style="position:absolute;left:0;bottom:52%;"><a href="#" class="arrow" onclick="shiftSlide(-1)">&#10094;</a></div>
+                <div style="position:absolute;right:0;bottom:52%;"><a href="#" class="arrow" onclick="shiftSlide(1)">&#10095;</a></div>
                 <div id="navmenu" class="navmenu">
                     <a href="index.html">Home</a>
                     <a href="unternehmen.html">Unternehmen</a>
@@ -742,11 +750,11 @@
                 <div id="footercont" class="footercont">
                     <img src="images/logo72.svg" class="logo">
                     <div class="lownavmenu">
-                        <a href="index.html">Home</a>&nbsp &#124; &nbsp<a href="unternehmen.html">Unternehmen</a>&nbsp &#124; &nbsp<a href="leistungen.html">Leistungen</a>&nbsp &#124; &nbsp<a href="karriere.html">Karriere</a>&nbsp &#124; &nbsp<a href="kontakt.html">Kontakt</a>
+                        <a href="index.html">Home</a>&nbsp; &#124; &nbsp;<a href="unternehmen.html">Unternehmen</a>&nbsp; &#124; &nbsp;<a href="leistungen.html">Leistungen</a>&nbsp; &#124; &nbsp;<a href="karriere.html">Karriere</a>&nbsp; &#124; &nbsp;<a href="kontakt.html">Kontakt</a>
                     </div>
                     <div class="footer">
-                        <a href="datenschutz.html">Datenschutz &nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
-                        <a href="impressum.html">Impressum &nbsp&nbsp&nbsp<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
+                        <a href="datenschutz.html">Datenschutz &nbsp;<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
+                        <a href="impressum.html">Impressum &nbsp;&nbsp;&nbsp;<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
                     </div>
                 </div>
             </td>
@@ -754,7 +762,7 @@
         <tr>
             <td>
                 <div class="cpyrightbase">
-                    <div>&copy; 2012<strong>&nbspG-Tech</strong>. Alle Rechte vorbehalten.</div>
+                    <div>&copy; 2012<strong>&nbsp;G-Tech</strong>. Alle Rechte vorbehalten.</div>
                 </div>
             </td>
         </tr>
