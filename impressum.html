@@ -131,12 +131,11 @@
         </tr>
     </table>
     <script>
-        function TglMnu() {
-            var div = document.getElementById("SmallMnu");
-            if (div.style.display == "none"){
-                div.style.display = "inherit";
+         function TglMnu() {
+            if (document.getElementById("SmallMnu").style.display == "none"){
+                document.getElementById("SmallMnu").style.display = "inherit";
             }else{
-                div.style.display = "none";
+                document.getElementById("SmallMnu").style.display = "none";
             }
         }
     </script>

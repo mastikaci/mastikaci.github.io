@@ -804,11 +804,10 @@
         }
         
         function TglMnu() {
-            var div = document.getElementById("SmallMnu");
-            if (div.style.display == "none"){
-                div.style.display = "inherit";
+            if (document.getElementById("SmallMnu").style.display == "none"){
+                document.getElementById("SmallMnu").style.display = "inherit";
             }else{
-                div.style.display = "none";
+                document.getElementById("SmallMnu").style.display = "none";
             }
         }
         
