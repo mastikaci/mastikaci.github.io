@@ -802,26 +802,13 @@
                 }
             }
         }
-
-        function ShowMnu() {
-            document.getElementById("contentcont").style.opacity = "0.1";
-            document.getElementById("footercont").style.opacity = "0.1";
-        }
-
-        function HideMnu() {
-            document.getElementById("contentcont").style.opacity = "1";
-            document.getElementById("footercont").style.opacity = "1";
-        }
         
         function TglMnu() {
             var div = document.getElementById("SmallMnu");
             if (div.style.display == "none"){
-                div.style.display = "flex";
-               
+                div.style.display = "inherit";
             }else{
                 div.style.display = "none";
-                document.getElementById("contentcont").style.opacity = "1";
-                document.getElementById("footercont").style.opacity = "1";
             }
         }
         
