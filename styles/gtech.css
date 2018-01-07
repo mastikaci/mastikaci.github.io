@@ -47,23 +47,25 @@
  }
 
 
- body {
+ body,
+ table,
+ tr {
      margin: 0;
      padding: 0;
      background: rgb(249, 249, 249);
      color: rgb(72, 72, 72);
-     width: calc(100vw-17px);
+     width: calc(100vw - 17px);
  }
 
  table,
  tr,
  td,
  div {
+     border:none;
      border-collapse: collapse;
      border-color: none;
-     background: none;
-     padding: 0px;
-
+     padding:0;
+     margin:0;
  }
 
  .cpyrightbase {
@@ -189,7 +191,7 @@
      flex: 1 1 20%;
      padding: 10pt;
      display: block;
-     margin:0;
+     margin: 0;
  }
 
  .navmnu2 {
@@ -202,17 +204,17 @@
 
  .navmenusmallvisible {
      display: none;
-     visibility:visible;
+     visibility: visible;
  }
 
  .navmenusmallvisible a {
      display: none;
  }
 
-.chbox {
-   position: absolute;
-   left: -9999px;
-}
+ .chbox {
+     position: absolute;
+     left: -9999px;
+ }
 
 
  @media only screen and (max-width: 850px) {
@@ -279,12 +281,12 @@
          text-align: center;
          width: 100%;
          z-index: 1;
-         visibility:visible;
+         visibility: visible;
      }
-     
+
      .chbox:checked ~ .navmenusmallvisible {
-            visibility:hidden;
-        }
+         visibility: hidden;
+     }
 
      .navmenusmallvisible a {
          font-family: 'Digital Desolation Plus';
@@ -293,10 +295,11 @@
          font-size: 10pt;
          flex: 1 1 100%;
          padding: 10pt;
-         margin:0;
+         margin: 0;
          background: rgba(0, 0, 0, 0.9);
          -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000)";
          display: block;
+         text-align:center;
          zoom: 1;
      }
 
@@ -313,13 +316,18 @@
      background-repeat: no-repeat;
      background-position: top center;
      height: 37.5vw;
-     width: 100vw;
+     width: calc(100vw - 17px);
      background-size: cover;
      text-align: center;
      vertical-align: bottom;
      margin: 0;
      padding: 0;
      border-collapse: collapse;
+ }
+
+ .mainimgw {
+     width: calc(100vw - 17px);
+     height: 37.5vw;
  }
 
  .contentcont {
