@@ -34,12 +34,17 @@
         }
 
         #Jobs {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             -webkit-flex-flow: column wrap;
+            -ms-flex-flow: column wrap;
             justify-content: flex-start;
+            -ms-flex-pack: start;
             align-items: stretch;
-            flex-grow: 0;
-            flex-shrink: 0;
+            -ms-flex-align: stretch;
             text-align: left;
             width: 100%;
         }
