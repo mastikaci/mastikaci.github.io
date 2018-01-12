@@ -810,7 +810,7 @@
         }
 
         var slideIndex2 = 0;
-        setTimeout(carousel, 15000);
+        var timeoutHandle = window.setTimeout(carousel, 15000);
         var y;
 
         function carousel() {
@@ -824,10 +824,11 @@
                 slideIndex2 = 1
             }
             y[slideIndex2 - 1].style.display = "inherit";
-            setTimeout(carousel, 10000); // Change image every 2 seconds
+            timeoutHandle = window.setTimeout(carousel, 10000); // Change image every 2 seconds
         }
 
         function shiftSlide(val) {
+            window.clearTimeout(timeoutHandle);
             slideIndex2 = slideIndex2 + val;
             if (slideIndex2 > y.length) {
                 slideIndex2 = 1
@@ -839,6 +840,7 @@
                 y[l].style.display = "none";
             }
             y[slideIndex2 - 1].style.display = "inherit";
+            timeoutHandle = window.setTimeout(carousel, 10000);
         }
     </script>
 
