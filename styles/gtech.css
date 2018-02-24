@@ -194,7 +194,7 @@
      -ms-flex-align: end;
      margin-right: 20pt;
      padding: 0; //border:1px solid red;
-     flex: 0 0 75pt;
+     flex: 0 0 100pt;
  }
 
  .footer a {
@@ -221,7 +221,7 @@
      color: rgb(249, 249, 249);
  }
 
- @media only screen and (max-width: 680px) {
+ @media only screen and (max-width: 850px) {
      .lownavmenu {
          display: none;
      }
@@ -236,8 +236,8 @@
  }
 
  .logo {
-     height: 50pt;
-     width: 50pt;
+     height: 25pt;
+     width: 136pt;
      margin-left: 30pt;
      margin-top: 10pt;
      margin-bottom: 10pt; //border:1px solid red;
