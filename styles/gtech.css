@@ -171,8 +171,8 @@
      display: -ms-flexbox;
      display: -webkit-flex;
      display: flex;
-     -webkit-flex-flow: row wrap;
-     -ms-flex-flow: row wrap;
+     -webkit-flex-flow: row nowrap;
+     -ms-flex-flow: row nowrap;
      justify-content: space-between;
      -ms-flex-pack: justify;
      align-items: center; //border:1px solid red;
@@ -194,7 +194,7 @@
      -ms-flex-align: end;
      margin-right: 20pt;
      padding: 0; //border:1px solid red;
-     flex: 0 0 100pt;
+     flex: 0 0 75pt;
  }
 
  .footer a {
@@ -212,6 +212,7 @@
  .lownavmenu {
      font-size: 9pt;
      color: rgb(249, 249, 249); //border:1px solid red;
+     padding-right: 25pt;
      flex: 0 0 auto;
  }
 
