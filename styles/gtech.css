@@ -46,6 +46,67 @@
      font-style: normal;
  }
 
+@font-face {
+    font-family: 'D3 Circuitism';
+    src: url('../fonts/D3Circuitism.eot');
+    src: url('../fonts/D3Circuitism.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/D3Circuitism.woff2') format('woff2'),
+    url('../fonts/D3Circuitism.woff') format('woff'),
+    url('../fonts/D3Circuitism.ttf') format('truetype'),
+    url('../fonts/D3Circuitism.svg#D3Circuitism') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+@font-face {
+    font-family: 'D3 Circuitism Oblique';
+    src: url('../fonts/D3CircuitismOblique.eot');
+    src: url('../fonts/D3CircuitismOblique.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/D3CircuitismOblique.woff2') format('woff2'),
+    url('../fonts/D3CircuitismOblique.woff') format('woff'),
+    url('../fonts/D3CircuitismOblique.ttf') format('truetype'),
+    url('../fonts/D3CircuitismOblique.svg#D3CircuitismOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neogrey';
+    src: url('../fonts/Neogrey.eot');
+    src: url('../fonts/Neogrey.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Neogrey.woff2') format('woff2'),
+        url('../fonts/Neogrey.woff') format('woff'),
+        url('../fonts/Neogrey.ttf') format('truetype'),
+        url('../fonts/Neogrey.svg#Neogrey') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homestile';
+    src: url('../fonts/Homestile.eot');
+    src: url('../fonts/Homestile.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Homestile.woff2') format('woff2'),
+        url('../fonts/Homestile.woff') format('woff'),
+        url('../fonts/Homestile.ttf') format('truetype'),
+        url('../fonts/Homestile.svg#Homestile') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akashi';
+    src: url('../fonts/Akashi.eot');
+    src: url('../fonts/Akashi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Akashi.woff2') format('woff2'),
+        url('../fonts/Akashi.woff') format('woff'),
+        url('../fonts/Akashi.ttf') format('truetype'),
+        url('../fonts/Akashi.svg#Akashi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
  body,
  table,
@@ -54,9 +115,10 @@
      margin: 0;
      padding: 0;
      background: rgb(249, 249, 249);
-     color: rgb(72, 72, 72);
+     color: #717a8a; //rgb(72, 72, 72);
      width: calc(100vw - 15px); 
      min-width:300px;
+     font-family:'Roboto',sans-serif;
  }
 
  @media only screen and (max-width: 600px) {
@@ -70,6 +132,7 @@
          color: rgb(72, 72, 72);
          width: 100vw;
          min-width:300px;
+         font-family:'Roboto',sans-serif;
      }
  }
 
