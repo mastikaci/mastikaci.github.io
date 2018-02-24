@@ -444,6 +444,10 @@
      .contentcont .frame {
          flex: 0 1 90vw;
      }
+     
+    .logo {
+     margin-left: 10pt;
+     }
  }
 
  .arch {
