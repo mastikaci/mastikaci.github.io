@@ -1,20 +1,862 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-<HTML>
-<html lang="en">
-   <HEAD>
-	<meta charset="utf-8"/>
-      <TITLE>G-TECH</TITLE>
-   </HEAD>
-   <BODY>
-	<p>Dear visitor</p>
-	   <p>Our Site is currently down due to maintenance. Sorry for the inconvenience. We hope to see you again soon.</p>
-   </BODY>
-</HTML>
- 
- 
- 
- 
- 
- 
- 
+<!DOCTYPE html>
+<html lang="de" xml:lang="de">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112419002-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112419002-1');
+    </script>
+    -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>G-Tech</title>
+    <meta name="description" content="G-Tech ist ein Ingenieurdienstleister, der aus einer gemeinsamen Idee und Ideologie von Ingenieuren und Profis auf die Beine gesetzt worden ist, mit dem Ziel auf der einen Seite Erfolg mit Menschlichkeit und Spaß bei der Arbeit zu verbinden und auf der anderen Seite die Grenzen der Technologie zu verschieben. G-Tech bietet maßgeschneiderte Lösungen im Bereich Automobilelektronik über alle Phasen des Entwicklungsprozesses hinweg in den Leistungsfeldern Antrieb, Getriebe, Chassis & Body.">
+    <meta name="keywords" content="Automobilelektronik, Elektromobilität, Hybrid, Elektrofahrzeug, Antrieb, Getriebe, Fahrwerk, Leistungselektronik">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/gtech.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <style>
+        @keyframes imganim {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes imganim {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes imganim2 {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 0.5;
+            }
+        }
+
+        @-webkit-keyframes imganim2 {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 0.5;
+            }
+        }
+
+        #navmenu a {
+            color: rgb(240, 240, 240);
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        #navmenu a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: black;
+        }
+
+        #Sketch20 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            vertical-align: bottom;
+            opacity: 1;
+        }
+
+        #Real40 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            vertical-align: bottom;
+            opacity: 0;
+            animation-name: imganim;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-direction: forwards;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: 6s;
+        }
+
+
+        #Reall40 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            vertical-align: bottom;
+            opacity: 0;
+            animation-name: imganim;
+            animation-duration: 0.1s;
+            animation-iteration-count: 1;
+            animation-direction: forwards;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: 10s;
+        }
+
+        .slide {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            vertical-align: bottom;
+            display: none;
+        }
+
+        #contentcont {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            justify-content: space-evenly;
+            -ms-flex-pack: justify;
+            align-items: stretch;
+            -ms-flex-align: stretch;
+            max-width:100%;
+            padding: 2vw;
+        }
+
+        #contentcont .frame {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: column wrap;
+            -ms-flex-flow: column wrap;
+            justify-content: flex-start;
+            -ms-flex-pack: start;
+            align-items: center;
+            -ms-flex-align: center;
+            flex: 1 0 300px;
+            padding: 25pt;
+        }
+
+        .frame>div {
+            margin-bottom: 10pt;
+            color: #5a5a5a;
+            max-width:100%;
+        }
+
+        .frame>div>p {
+            font-size: 12pt;
+            text-align: justify;
+            color: #717a8a;
+        }
+
+        .frame>div>h1 {
+            font-family: 'Neogrey';//'Reality Hyper';
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(0, 125, 0);
+        }
+
+        .hvreff #qimag2 {
+            opacity: 0;
+            transition-delay: 0.425s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag3 {
+            opacity: 0;
+            transition-delay: 0.4s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag4 {
+            opacity: 0;
+            transition-delay: 0.375s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag5 {
+            opacity: 0;
+            transition-delay: 0.35s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag6 {
+            opacity: 0;
+            transition-delay: 0.325s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag7 {
+            opacity: 0;
+            transition-delay: 0.3;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag8 {
+            opacity: 0;
+            transition-delay: 0.275s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag9 {
+            opacity: 0;
+            transition-delay: 0.25s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag10 {
+            opacity: 0;
+            transition-delay: 0.225s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag11 {
+            opacity: 0;
+            transition-delay: 0.2s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag12 {
+            opacity: 0;
+            transition-delay: 0.175s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag13 {
+            opacity: 0;
+            transition-delay: 0.15s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag14 {
+            opacity: 0;
+            transition-delay: 0.125s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag15 {
+            opacity: 0;
+            transition-delay: 0.1s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag16 {
+            opacity: 0;
+            transition-delay: 0.075s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag17 {
+            opacity: 0;
+            transition-delay: 0.05s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag18 {
+            opacity: 0;
+            transition-delay: 0.025s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff #qimag19 {
+            opacity: 0;
+            transition-delay: 0s;
+            transition-duration: 0s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag2 {
+            opacity: 1;
+            transition-delay: 0s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag3 {
+            opacity: 1;
+            transition-delay: 0.025s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag4 {
+            opacity: 1;
+            transition-delay: 0.05s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag5 {
+            opacity: 1;
+            transition-delay: 0.075s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag6 {
+            opacity: 1;
+            transition-delay: 0.1s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag7 {
+            opacity: 1;
+            transition-delay: 0.125s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag8 {
+            opacity: 1;
+            transition-delay: 0.15s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag9 {
+            opacity: 1;
+            transition-delay: 0.175s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag10 {
+            opacity: 1;
+            transition-delay: 0.2s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag11 {
+            opacity: 1;
+            transition-delay: 0.225s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag12 {
+            opacity: 1;
+            transition-delay: 0.25s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag13 {
+            opacity: 1;
+            transition-delay: 0.275s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag14 {
+            opacity: 1;
+            transition-delay: 0.3s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag15 {
+            opacity: 1;
+            transition-delay: 0.325s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag16 {
+            opacity: 1;
+            transition-delay: 0.35s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag17 {
+            opacity: 1;
+            transition-delay: 0.375s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag18 {
+            opacity: 1;
+            transition-delay: 0.4s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        .hvreff:hover #qimag19 {
+            opacity: 1;
+            transition-delay: 0.425s;
+            transition-duration: 0.05s;
+            transition-property: opacity;
+            transition-timing-function: steps(1);
+        }
+
+        #startframepic {
+            position: relative;
+            height: 140px;
+            width: 300px; 
+        }
+
+        #midframepic {
+            position: relative;
+            height: 140px;
+            width: 300px; 
+        }
+
+        #endframepic {
+            position: relative;
+            height: 140px;
+            width: 300px; 
+        }
+
+        .uimagclass {
+            position: absolute;
+            height: 140px;
+            width: 260px;
+            top: 0;
+            left: 31px;
+        }
+
+        .qimagclass {
+            position: absolute;
+            height: 86px;
+            width: 100px;
+            left: 105px;
+            top: 27px;
+            background: url(images/qm70.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover; 
+            opacity: 0;
+        }
+
+        .qimagclasso {
+            position: absolute;
+            height: 86px;
+            width: 100px;
+            left: 105px;
+            top: 27px;
+            background: url(images/qm70.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover; 
+            opacity: 1;
+        }
+
+        .vimagclass {
+            position: absolute;
+            height: 140px;
+            width: 297px;
+            top: 0;
+            left: 1.5px;
+        }
+
+        #vimag {
+            opacity: 1;
+        }
+
+        .button {
+            border-radius: 3px;
+            padding: 8px;
+            background: linear-gradient(to bottom, #08c, #005580);
+            font-family: 'Digital dream Fat';
+            font-size: 7pt;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            display:inline-block;
+        }
+
+        .button:hover {
+            background: linear-gradient(to bottom, #820, #080000);
+        }
+
+        .arrow {
+            text-decoration: none;
+            color: white;
+            background: rgba(0, 0, 0, 0.4);
+            font-size: 20pt;
+            opacity: 0;
+            padding-left: 3pt;
+            padding-right: 3pt;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            animation-name: imganim2;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-direction: forwards;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: 15s;
+            transition-delay: 0s;
+            transition-duration: 0.3s;
+            transition-property: background;
+            transition-timing-function: linear;
+        }
+
+        .arrow:hover {
+            background: rgba(0, 0, 0, 1);
+        }
+
+        @media only screen and (max-width: 1160px) {
+            #contentcont {
+                -webkit-flex-flow: column wrap;
+                -ms-flex-flow: column wrap;
+                justify-content: flex-start;
+                -ms-flex-pack: start;
+                align-items: stretch;
+                -ms-flex-align: stretch;
+                padding: 3vw;
+                max-width:100%;
+                
+            }
+            #contentcont .frame {
+                -webkit-flex-flow: row wrap;
+                -ms-flex-flow: row wrap;
+                justify-content: flex-start;
+                -ms-flex-pack: start;
+                flex: 1 1 auto;
+                align-items: center; 
+                -ms-flex-align: center;
+                padding: 10pt;
+            }
+            .frame>div:nth-child(1) {
+                flex: 0 0 300px;
+                margin-right: 20pt; 
+            }
+            .frame>div:nth-child(2) {
+                flex: 1 1 300px;
+                margin-bottom: 20pt;
+            }
+            .frame>div>h1 {
+                text-align: left;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            #contentcont {
+                -webkit-flex-flow: column wrap;
+                -ms-flex-flow: column wrap;
+                justify-content: flex-start;
+                -ms-flex-pack: start;
+                align-items: stretch;
+                -ms-flex-align: stretch;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 30pt;
+                max-width:calc(100vw - 15px);
+            }
+            #contentcont .frame {
+                -webkit-flex-flow: column wrap;
+                -ms-flex-flow: column wrap;
+                justify-content: flex-start;
+                -ms-flex-pack: start;
+                flex: 1 1 auto;
+                align-items: start; 
+                -ms-flex-align: start;
+                padding: 0pt;
+                 min-width:300px;
+            }
+            .frame>div:nth-child(1) {
+                margin-right: 0pt; 
+                flex: 1 0 140px;
+                max-width:100%;
+            }
+            .frame>div:nth-child(2) {
+                flex: 1 1 auto; 
+                margin-bottom: 30pt;
+                padding: 3vw;
+                width:94%;
+            }
+            #midframe {
+                margin-top: 10pt;
+            }
+        }
+
+        
+    </style>
+
+
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td class="mainimgw">
+                <div class="mainimg">
+                    <div><img id="Sketch20" src="images/sketch600.jpg"></div>
+                    <!--<div><img id="Real40" src="images/real600.jpg"></div>
+                    <div><img id="Reall40" src="images/reall600.jpg"></div>
+                    <div><img class="slide" src="images/reall600.jpg"></div>-->
+                    <div><img class="slide" src="images/sketch600.jpg"></div>
+                    <div><img class="slide" src="images/untm85.jpg"></div>
+                    <div><img class="slide" src="images/lst.jpg"></div>
+                    <div><img class="slide" src="images/stw90.jpg"></div>
+                    <div><img class="slide" src="images/ktkt2.jpg"></div>
+                    <div style="position:absolute;left:0;bottom:52%;"><a href="#" class="arrow" onclick="shiftSlide(-1)">&#10094;</a></div>
+                    <div style="position:absolute;right:0;bottom:52%;"><a href="#" class="arrow" onclick="shiftSlide(1)">&#10095;</a></div>
+                    <div id="navmenu" class="navmenu">
+                        <a href="index.html">Home</a>
+                        <a href="unternehmen.html">Unternehmen</a>
+                        <a href="leistungen.html">Leistungen</a>
+                        <a href="karriere.html">Karriere</a>
+                        <a href="kontakt.html">Kontakt</a>
+                    </div>
+                    <div id="navmenu2" class="navmnu2">
+                        <input type="checkbox" class="chbox" id="mnuic">
+                        <label for="mnuic" class="mnuic">&#9776;</label>
+                        <div id="SmallMnu" class="navmenusmallvisible">
+                            <a href="index.html">Home</a>
+                            <a href="unternehmen.html">Unternehmen</a>
+                            <a href="leistungen.html">Leistungen</a>
+                            <a href="karriere.html">Karriere</a>
+                            <a href="kontakt.html">Kontakt</a></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div id="contentcont">
+                    <div id="startframe" class="frame">
+                        <div id="startframepic">
+                            <img src="images/spdp85.jpg" class="uimagclass">
+                        </div>
+                        <div>
+                            <h1>Unser Betriebssystem</h1>
+                            <p>G-Tech ist auf die Entwicklung von Anwendungssoftware für die Automobilelektronik spezialisiert. Dank einer zuverlässigen Plattform und eines übertragbares Betriebssystems verfügen wir über eine solide Grundlage, um in kurzer Zeit und mit geringem Overhead Steuerungen für eine Vielzahl von Anwendungen zu entwickeln ...</p>
+                            <p style="text-align:center;"><a class="button" href="unternehmen.html">Grenzenlose Technik »</a></p>
+                        </div>
+                    </div>
+                    <div id="midframe" class="frame">
+                        <div id="midframepic">
+                            <img id="qimag1" class="qimagclasso mySlides" src="images/q0.svg">
+                            <img id="qimag2" class="qimagclass mySlides" src="images/q5.svg">
+                            <img id="qimag3" class="qimagclass mySlides" src="images/q10.svg">
+                            <img id="qimag4" class="qimagclass mySlides" src="images/q15.svg">
+                            <img id="qimag5" class="qimagclass mySlides" src="images/q20.svg">
+                            <img id="qimag6" class="qimagclass mySlides" src="images/q25.svg">
+                            <img id="qimag7" class="qimagclass mySlides" src="images/q30.svg">
+                            <img id="qimag8" class="qimagclass mySlides" src="images/q35.svg">
+                            <img id="qimag9" class="qimagclass mySlides" src="images/q40.svg">
+                            <img id="qimag10" class="qimagclass mySlides" src="images/q45.svg">
+                            <img id="qimag11" class="qimagclass mySlides" src="images/q50.svg">
+                            <img id="qimag12" class="qimagclass mySlides" src="images/q55.svg">
+                            <img id="qimag13" class="qimagclass mySlides" src="images/q60.svg">
+                            <img id="qimag14" class="qimagclass mySlides" src="images/q65.svg">
+                            <img id="qimag15" class="qimagclass mySlides" src="images/q70.svg">
+                            <img id="qimag16" class="qimagclass mySlides" src="images/q75.svg">
+                            <img id="qimag17" class="qimagclass mySlides" src="images/q80.svg">
+                            <img id="qimag18" class="qimagclass mySlides" src="images/q85.svg">
+                            <img id="qimag19" class="qimagclass mySlides" src="images/q90.svg">
+                            <img id="qimag20" class="qimagclass mySlides" src="images/q91.svg">
+                            <img id="qimag21" class="qimagclass mySlides" src="images/q92.svg">
+                            <img id="qimag22" class="qimagclass mySlides" src="images/q93.svg">
+                            <img id="qimag23" class="qimagclass mySlides" src="images/q.svg">
+                            <img id="qimag24" class="qimagclass mySlides" src="images/qm4.svg">
+                            <img id="qimag26" class="qimagclass mySlides" src="images/qm3.svg">
+                            <img id="qimag26" class="qimagclass mySlides" src="images/qm2.svg">
+                            <img id="qimag27" class="qimagclass mySlides" src="images/qm1.svg">
+                        </div>
+                        <div>
+                            <h1>The Art of Engineering</h1>
+                            <p>Der Anteil von Elektronik in Fahrzeugen wächst kontinuierlich und es wird immer kniffliger, die teilweise widersprüchlichen Anforderungen von Kunden und Gesetzgebung zu erfüllen. Vielleicht kann ein Querdenker Ihnen helfen, ein Ausrufezeichen mit den Anforderungen zu setzen? G-Tech bietet Impulse für Ihr Unternehmen, um Ihre Entwicklung voranzutreiben ...</p>
+                            <p style="text-align:center;"><a class="button" href="leistungen.html">Ihr Entwicklungsschub »</a></p>
+                        </div>
+                    </div>
+                    <div id="endframe" class="frame" href="karriere.html">
+                        <div id="endframepic">
+                            <img id="vimag" src="images/spd2p85.jpg" class="vimagclass">
+                        </div>
+                        <div>
+                            <h1>Unser V6 Antrieb</h1>
+                            <p>G-Tech unterstützt seine Kunden in den verschiedenen Phasen der Softwareentwicklung. Nicht nur unsere Kunden profitieren von unsere Leistung, wir bieten unseren Mitarbeitern auch einen Karriereschub. Suchen Sie bedeutende Aufgaben im nationalen und internationalen Umfeld, dann sollten wir umgehend in Kontakt treten ... </p>
+                            <p style="text-align:center;"><a class="button" href="karriere.html">Die Stellenangebote »</a></p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="background: rgb(70,70,70);">
+                <div id="footercont" class="footercont">
+                    <img src="images/logo72.png" class="logo">
+                    <div class="lownavmenu">
+                        <a href="index.html">Home</a>&nbsp; &#124; &nbsp;<a href="unternehmen.html">Unternehmen</a>&nbsp; &#124; &nbsp;<a href="leistungen.html">Leistungen</a>&nbsp; &#124; &nbsp;<a href="karriere.html">Karriere</a>&nbsp; &#124; &nbsp;<a href="kontakt.html">Kontakt</a>
+                    </div>
+                    <div class="footer">
+                        <a href="datenschutz.html">Datenschutz &nbsp;<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
+                        <a href="impressum.html">Impressum &nbsp;&nbsp;&nbsp;<font style="font-size:8pt;color:deepskyblue;font-family:'Arial'">&lt;</font></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cpyrightbase">
+                    <div>&copy; 2012<strong>&nbsp;<font style="font-family:'D3 Circuitism Oblique';color:rgb(0, 125, 0);">G</font><font style="font-family:'D3 Circuitism Oblique';font-size:3pt;">&nbsp;</font><font style="font-family:'D3 Circuitism Oblique';color:rgb(100,100,100)">TECH</font></strong>&nbsp;&nbsp;  Alle Rechte vorbehalten.</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var slideIndex = 0;
+        var itcounter = 0;
+        var itlimit;
+        slider();
+        if (screen.width < 500) {
+            itlimit = 100;
+        } else {
+            itlimit = 10;
+        }
+
+        function slider() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 1; i < x.length; i++) {
+                x[i].className = "qimagclass mySlides";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                itcounter++;
+                slideIndex = 1;
+            }
+            if (itcounter >= itlimit) {
+                for (i = 1; i < x.length; i++) {
+                    x[i].className = "qimagclass mySlides";
+                }
+                document.getElementById("midframe").className += " " + "hvreff";
+            } else {
+                x[slideIndex - 1].className = "qimagclasso mySlides";
+                if (slideIndex - 1 == 0 || slideIndex - 1 == 18) {
+                    setTimeout(slider, 3000);
+                } else {
+                    if (slideIndex - 1 > 21) {
+                        setTimeout(slider, 50);
+                    } else {
+                        if (slideIndex - 1 > 18) {
+                            setTimeout(slider, 100);
+                        } else {
+                            setTimeout(slider, 50); // Change image every 3 seconds
+                        }
+                    }
+                }
+            }
+        }
+
+        var slideIndex2 = 0;
+        var timeoutHandle = window.setTimeout(carousel, 15000);
+        var y;
+
+        function carousel() {
+            var k;
+            y = document.getElementsByClassName("slide");
+            for (k = 0; k < y.length; k++) {
+                y[k].style.display = "none";
+            }
+            slideIndex2++;
+            if (slideIndex2 > y.length) {
+                slideIndex2 = 1
+            }
+            y[slideIndex2 - 1].style.display = "inherit";
+            timeoutHandle = window.setTimeout(carousel, 10000); // Change image every 2 seconds
+        }
+
+        function shiftSlide(val) {
+            window.clearTimeout(timeoutHandle);
+            slideIndex2 = slideIndex2 + val;
+            if (slideIndex2 > y.length) {
+                slideIndex2 = 1
+            }
+            if (slideIndex2 < 1) {
+                slideIndex2 = y.length;
+            }
+            for (l = 0; l < y.length; l++) {
+                y[l].style.display = "none";
+            }
+            y[slideIndex2 - 1].style.display = "inherit";
+            timeoutHandle = window.setTimeout(carousel, 10000);
+        }
+    </script>
+
+</body>
+
+</html>
