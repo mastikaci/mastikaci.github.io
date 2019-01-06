@@ -237,11 +237,11 @@
  }
 
  .logo {
-     height: 25pt;
-     width: 136pt;
+     height: 40pt; //25pt;
+     width: 140pt; //136pt;
      margin-left: 30pt;
-     margin-top: 10pt;
-     margin-bottom: 10pt; //border:1px solid red;
+     margin-top: 5pt;
+     margin-bottom: 5pt; //border:1px solid red;
      flex: 0 0 auto;
  }
 
